@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Privexis Elite | Enterprise PII Discovery</title>
+
+    <!-- Force Load Tailwind and Inter Font -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              enterprise: {
+                dark: '#020617',
+                sidebar: '#0f172a',
+                card: '#1e293b',
+                border: '#1e293b',
+                accent: '#3b82f6',
+                muted: '#94a3b8',
+              },
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        background-color: #020617 !important;
+        font-family: 'Inter', sans-serif !important;
+        color: #f1f5f9 !important;
+        margin: 0;
+      }
+      .glass-card {
+        background: rgba(15, 23, 42, 0.6);
+        backdrop-filter: blur(16px);
+        border: 1px solid #1e293b;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

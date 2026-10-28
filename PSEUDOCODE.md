@@ -1,31 +1,39 @@
-# Privexis pseudocode (scan, score, link, report)
+# Privexis Elite: Technical Architecture & Discovery Pipeline
 
-The whole flow in about 20 lines. Real code: `src/privexis/` (`sampler.py`, `engine.py`, `linker.py`, `report.py`, `evaluator.py`).
+This document outlines the high-level logic of the Privexis Elite system, a hybrid personal-data discovery engine.
+
+## 1. High-Level System Flow
+The system is split into a decoupled **FastAPI Backend** and a **React Enterprise Frontend**.
 
 ```text
-load rules.yaml, checklist.yaml, metadata.yaml
-
-for each file in data/ (CSV or SQLite, opened read-only):
-    for each column:
-        sample = up to 50 random non-empty values            # reservoir sampling, fixed seed
-        for each class in [NAME, EMAIL, PHONE, GOVT_ID, DOB]:
-            if column name matches a negative hint: skip this class
-            name_score  = 1 if column name matches a name hint else 0
-            value_score = share of sampled values that pass the regex AND the strict validator
-            confidence  = 0.4 * name_score + 0.6 * value_score
-        best = class with the highest confidence
-        if confidence >= 0.5:  flag column as a CANDIDATE of that class
-        elif confidence >= 0.1: add column to the "needs review" list
-
-for each candidate field:
-    entry = metadata["file:table:column"]                    # may be missing
-    for each item on the checklist (purpose, retention, owner, name hint, value check):
-        mark the item present or missing
-    gaps   = required checklist items that are missing
-    status = "EVIDENCE GAP FLAG" if gaps else "Candidate: checklist complete"
-
-write inventory.csv, inventory.json, gap_report.md           # every report carries the disclaimer
-compare flagged classes with the hand-labelled labels.csv    # per-class precision and recall
+Frontend (React) -> API Request (/scan) -> Backend (FastAPI) -> Discovery Engine -> Data Connector -> Result JSON -> Frontend UI
 ```
 
-Nothing in this flow decides a lawful basis or says whether a purpose or retention period is adequate. That is left to a human reviewer.
+## 2. The Discovery Pipeline (The "Brain")
+The engine employs a multi-stage hybrid approach to maximize both precision (reducing false positives) and recall (finding more PII).
+
+### Stage 1: Deterministic Matching (High Precision)
+For every column in the source (CSV or SQLite):
+1. **Negative Hint Filter**: If the column name matches a "negative hint" (e.g., `created_at` for a DOB rule), the class is immediately excluded.
+2. **Name-Hint Scoring**: If the column name matches a predefined "positive hint" (e.g., `email_address`), it receives a `name_score` of 1.0.
+3. **Value-Pattern Matching**: Sampled values are checked against compiled regex patterns.
+4. **Checksum Validation**: For high-risk IDs (Credit Cards, Aadhaar), a strict checksum (Luhn/Verhoeff) is applied. If the checksum fails, the match is rejected regardless of the regex.
+5. **Initial Confidence**: `Confidence = (NameWeight * name_score) + (ValueWeight * value_score)`
+
+### Stage 2: Probabilistic NLP (High Recall)
+If the deterministic score is below a high-confidence threshold:
+1. **Contextual Analysis**: The system uses **Microsoft Presidio (spaCy NLP)** to analyze the values.
+2. **Entity Recognition**: The NLP engine identifies entities (PERSON, LOCATION, etc.) based on the surrounding context and linguistic patterns.
+3. **Confidence Boost**: If NLP detects a strong entity, the confidence is boosted, flagging the column for human review.
+
+### Stage 3: Metadata Linking & Gap Analysis
+1. **Evidence Inventory**: Findings are linked to declared metadata (Purpose, Retention, Owner).
+2. **Gap Detection**: The system flags "Evidence Gaps" where PII is detected but the required metadata is missing.
+
+## 3. Technical Stack
+- **Backend**: Python 3.12, FastAPI, Pydantic, Presidio-Analyzer, SQLAlchemy.
+- **Frontend**: React 19, Vite, Tailwind CSS, Framer Motion (for animations).
+- **Configuration**: YAML-driven rules engine for effortless updates without code changes.
+
+---
+*Disclaimer: Privexis Elite provides technical evidence for auditors. It does not make legal or compliance determinations.*
