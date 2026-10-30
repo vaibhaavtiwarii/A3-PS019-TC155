@@ -1,4 +1,4 @@
-source,table,column,true_class
+source,table,column,class
 onboarding.csv,-,customer_name,NAME
 onboarding.csv,-,national_id,GOVT_ID
 onboarding.csv,-,email_addr,EMAIL

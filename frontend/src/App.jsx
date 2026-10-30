@@ -1,326 +1,121 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import {
-  Search, FileText, ShieldCheck, AlertCircle, Loader2,
-  Database, CheckCircle2, LayoutDashboard, ShieldAlert,
-  Zap, FileWarning, Settings, Trash2
-} from 'lucide-react';
-
-const API_BASE = 'http://localhost:8000';
+import Sidebar from './components/Sidebar';
+import Header from './components/Header';
+import MetadataModal from './components/MetadataModal';
+import DashboardPage from './pages/DashboardPage';
+import ScanPage from './pages/ScanPage';
+import EvidencePage from './pages/EvidencePage';
+import GapsPage from './pages/GapsPage';
+import AccuracyPage from './pages/AccuracyPage';
+import RulesPage from './pages/RulesPage';
+import DemosPage from './pages/DemosPage';
+import AboutPage from './pages/AboutPage';
 
 export default function App() {
-  const [filePath, setFilePath] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
-  const [results, setResults] = useState(null);
-  const [error, setError] = useState(null);
-  const [activeTab, setActiveTab] = useState('scan');
+  const [activePage, setActivePage] = useState('dashboard');
+  const [scanResult, setScanResult] = useState(null);
+  const [hasCustomData, setHasCustomData] = useState(false);
+  const [globalSearch, setGlobalSearch] = useState('');
+  const [editingItem, setEditingItem] = useState(null);
 
-  const handleScan = async () => {
-    if (!filePath) return;
-    setIsLoading(true);
-    setError(null);
+  // Auto-populate with standard synthetic demo data on first load
+  useEffect(() => {
+    loadDemoScan();
+  }, []);
+
+  const loadDemoScan = async () => {
     try {
-      const response = await axios.post(`${API_BASE}/scan`, {
-        file_path: filePath,
-        sample_size: 50
-      });
-      setResults(response.data);
-      setActiveTab('results');
+      const res = await axios.post('/api/scan-demo');
+      setScanResult(res.data);
+      setHasCustomData(false);
     } catch (err) {
-      setError(err.response?.data?.detail || 'Failed to connect to the Elite Backend');
-    } finally {
-      setIsLoading(false);
+      console.warn('Initial demo scan load error:', err);
     }
   };
 
-  return (
-    <div className="min-h-screen bg-[#020617] text-slate-200 font-sans selection:bg-blue-500/30">
-      {/* Navigation Sidebar */}
-      <div className="fixed left-0 top-0 h-full w-64 bg-[#0f172a] border-r border-slate-800 flex flex-col z-50">
-        <div className="p-6 flex items-center gap-3 border-b border-slate-800">
-          <div className="p-2 bg-blue-600 rounded-lg shadow-lg shadow-blue-600/20">
-            <ShieldCheck className="text-white w-5 h-5" />
-          </div>
-          <h1 className="text-xl font-bold tracking-tight text-white">Privexis<span className="text-blue-500">Elite</span></h1>
-        </div>
-
-        <nav className="flex-1 p-4 space-y-2">
-          <NavButton
-            active={activeTab === 'scan'}
-            onClick={() => setActiveTab('scan')}
-            icon={<Search className="w-4 h-4" />}
-            label="Discovery Engine"
-          />
-          <NavButton
-            active={activeTab === 'results'}
-            onClick={() => setActiveTab('results')}
-            icon={<LayoutDashboard className="w-4 h-4" />}
-            label="Evidence Board"
-            disabled={!results}
-          />
-          <NavButton
-            active={activeTab === 'settings'}
-            onClick={() => setActiveTab('settings')}
-            icon={<Settings className="w-4 h-4" />}
-            label="Rule Config"
-          />
-        </nav>
-
-        <div className="p-4 border-t border-slate-800">
-          <div className="p-3 rounded-xl bg-slate-900/50 border border-slate-800 text-xs text-slate-500">
-            <p className="font-semibold text-slate-400 mb-1">System Status</p>
-            <div className="flex items-center gap-2">
-              <div className="w-2 h-2 bg-emerald-500 rounded-full animate-pulse" />
-              Backend Operational
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* Main Content Area */}
-      <div className="pl-64 min-h-screen transition-all duration-300">
-        <div className="max-w-6xl mx-auto p-8">
-
-          {activeTab === 'scan' && (
-            <div className="animate-in fade-in slide-in-from-bottom-4 duration-700 space-y-8">
-              <div className="space-y-2">
-                <h2 className="text-4xl font-extrabold text-white tracking-tight">Personal Data Discovery</h2>
-                <p className="text-slate-400 text-lg">Identify PII evidence using a hybrid NLP & deterministic pipeline.</p>
-              </div>
-
-              <div className="relative group">
-                <div className="absolute -inset-1 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000 group-hover:duration-200"></div>
-                <div className="relative bg-[#0f172a] border border-slate-800 p-8 rounded-2xl shadow-2xl space-y-6">
-                  <div className="flex items-center gap-2 text-blue-400 text-xs uppercase tracking-widest font-bold">
-                    <Zap className="w-3 h-3" />
-                    Fast-Scan Interface
-                  </div>
-                  <div className="flex flex-col md:flex-row gap-4">
-                    <div className="relative flex-1">
-                      <FileText className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-slate-500" />
-                      <input
-                        type="text"
-                        placeholder="Paste path to CSV or SQLite file..."
-                        className="w-full bg-slate-950 border border-slate-800 rounded-xl pl-12 pr-4 py-4 text-white outline-none focus:ring-2 focus:ring-blue-500/50 transition-all"
-                        value={filePath}
-                        onChange={(e) => setFilePath(e.target.value)}
-                      />
-                    </div>
-                    <button
-                      onClick={handleScan}
-                      disabled={isLoading}
-                      className="bg-blue-600 hover:bg-blue-500 disabled:bg-slate-700 text-white font-bold px-8 py-4 rounded-xl transition-all flex items-center justify-center gap-3 shadow-lg shadow-blue-600/20 active:scale-95"
-                    >
-                      {isLoading ? <Loader2 className="w-5 h-5 animate-spin" /> : <Database className="w-5 h-5" />}
-                      {isLoading ? 'Analyzing...' : 'Begin Analysis'}
-                    </button>
-                  </div>
-                  {error && (
-                    <div className="flex items-center gap-3 text-red-400 text-sm p-4 bg-red-900/20 border border-red-900/50 rounded-xl">
-                      <AlertCircle className="w-5 h-5" />
-                      {error}
-                    </div>
-                  )}
-                </div>
-              </div>
-
-              {/* How it works section */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 pt-8">
-                <FeatureCard
-                  icon={<Search className="text-blue-400" />}
-                  title="Rule Matching"
-                  desc="Fast regex and column-name hint analysis."
-                />
-                <FeatureCard
-                  icon={<ShieldAlert className="text-purple-400" />}
-                  title="NLP Context"
-                  desc="Microsoft Presidio identifies entities via context."
-                />
-                <FeatureCard
-                  icon={<CheckCircle2 className="text-emerald-400" />}
-                  title="Checksums"
-                  desc="Luhn & Verhoeff algorithms eliminate false positives."
-                />
-              </div>
-            </div>
-          )}
-
-          {activeTab === 'results' && results && (
-            <div className="animate-in fade-in slide-in-from-bottom-4 duration-700 space-y-8">
-              <div className="flex items-center justify-between">
-                <div className="space-y-1">
-                  <h2 className="text-3xl font-bold text-white tracking-tight">Evidence Inventory</h2>
-                  <p className="text-slate-400">Technical findings and confidence scoring results.</p>
-                </div>
-                <button
-                  onClick={() => setResults(null)}
-                  className="p-2 text-slate-500 hover:text-red-400 transition-colors"
-                  title="Clear Results"
-                >
-                  <Trash2 className="w-5 h-5" />
-                </button>
-              </div>
-
-              {/* Dashboard Stats */}
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <StatCard
-                  label="Total Columns Scanned"
-                  value={results.total_columns_scanned}
-                  icon={<FileText />}
-                  color="blue"
-                />
-                <StatCard
-                  label="PII Fields Detected"
-                  value={results.pii_detected_count}
-                  icon={<ShieldAlert />}
-                  color="red"
-                />
-                <StatCard
-                  label="Processing Time"
-                  value={`${results.execution_time}s`}
-                  icon={<Zap />}
-                  color="emerald"
-                />
-              </div>
-
-              {/* Professional Results Table */}
-              <div className="bg-[#0f172a] border border-slate-800 rounded-2xl overflow-hidden shadow-2xl">
-                <div className="p-6 border-b border-slate-800 bg-slate-900/50 flex items-center justify-between">
-                  <h3 className="font-semibold text-white flex items-center gap-2">
-                    <Database className="w-4 h-4 text-blue-400" />
-                    Detailed Field Analysis
-                  </h3>
-                </div>
-                <div className="overflow-x-auto">
-                  <table className="w-full text-left border-collapse">
-                    <thead>
-                      <tr className="bg-slate-950 text-slate-500 text-xs uppercase tracking-widest">
-                        <th className="px-6 py-4 font-semibold">Column / Path</th>
-                        <th className="px-6 py-4 font-semibold">Classification</th>
-                        <th className="px-6 py-4 font-semibold">Confidence</th>
-                        <th className="px-6 py-4 font-semibold">Evidence Log</th>
-                      </tr>
-                    </thead>
-                    <tbody className="divide-y divide-slate-800">
-                      {results.findings.map((f, i) => (
-                        <tr key={i} className="group hover:bg-white/[0.03] transition-all">
-                          <td className="px-6 py-4">
-                            <div className="font-bold text-white">{f.column}</div>
-                            <div className="text-xs text-slate-500 font-mono">{f.source} {f.table !== '-' && `→ ${f.table}`}</div>
-                          </td>
-                          <td className="px-6 py-4">
-                            <span className={`px-3 py-1 rounded-full text-[10px] font-black uppercase tracking-tighter border
-                              ${f.pii_class === 'EMAIL' ? 'bg-blue-500/10 text-blue-400 border-blue-500/20' :
-                                f.pii_class === 'PERSON' ? 'bg-purple-500/10 text-purple-400 border-purple-500/20' :
-                                'bg-slate-500/10 text-slate-400 border-slate-500/20'}`}>
-                              {f.pii_class}
-                            </span>
-                          </td>
-                          <td className="px-6 py-4">
-                            <div className="flex items-center gap-3">
-                              <div className="w-24 bg-slate-800 h-2 rounded-full overflow-hidden">
-                                <div
-                                  className={`h-full transition-all duration-1000 ${f.confidence > 0.8 ? 'bg-emerald-500' : f.confidence > 0.5 ? 'bg-yellow-500' : 'bg-red-500'}`}
-                                  style={{ width: `${f.confidence * 100}%` }}
-                                />
-                              </div>
-                              <span className="text-xs font-mono font-bold text-slate-300">{f.confidence}</span>
-                            </div>
-                          </td>
-                          <td className="px-6 py-4">
-                            <div className="text-sm text-slate-400 italic line-clamp-1 max-w-xs">
-                              "{f.evidence}"
-                            </div>
-                          </td>
-                        </tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {activeTab === 'settings' && (
-            <div className="animate-in fade-in slide-in-from-bottom-4 duration-700">
-              <div className="space-y-2 mb-8">
-                <h2 className="text-3xl font-bold text-white tracking-tight">Rule Configuration</h2>
-                <p className="text-slate-400">Manage the deterministic detection logic and scoring weights.</p>
-              </div>
-              <div className="glass-card p-8 rounded-2xl border border-slate-800 space-y-6">
-                <div className="flex items-center gap-3 text-slate-300 font-medium mb-4">
-                  <Settings className="w-5 h-5" />
-                  <span>Engine Parameters</span>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                  <div className="space-y-4">
-                    <label className="block text-sm text-slate-500">Name Hint Weight</label>
-                    <input type="range" className="w-full accent-blue-500" />
-                  </div>
-                  <div className="space-y-4">
-                    <label className="block text-sm text-slate-500">Value Pattern Weight</label>
-                    <input type="range" className="w-full accent-blue-500" />
-                  </div>
-                </div>
-                <div className="pt-6 border-t border-slate-800 flex justify-end">
-                  <button className="bg-blue-600 hover:bg-blue-500 text-white px-6 py-2 rounded-lg font-semibold transition-all">
-                    Save Configuration
-                  </button>
-                </div>
-              </div>
-            </div>
-          )}
-        </div>
-      </div>
-    </div>
-  );
-}
-
-function NavButton({ active, onClick, icon, label, disabled = false }) {
-  return (
-    <button
-      onClick={onClick}
-      disabled={disabled}
-      className={`w-full flex items-center gap-3 px-4 py-3 rounded-xl transition-all text-sm font-medium ${
-        active
-          ? 'bg-blue-600 text-white shadow-lg shadow-blue-600/20'
-          : 'text-slate-400 hover:bg-slate-800 hover:text-slate-200'
-      } ${disabled ? 'opacity-30 cursor-not-allowed' : ''}`}
-    >
-      {icon}
-      {label}
-    </button>
-  );
-}
-
-function FeatureCard({ icon, title, desc }) {
-  return (
-    <div className="p-6 rounded-2xl bg-[#0f172a] border border-slate-800 hover:border-slate-700 transition-all group">
-      <div className="p-3 rounded-xl bg-slate-900 border border-slate-800 w-fit mb-4 group-hover:scale-110 transition-transform">
-        {React.cloneElement(icon, { className: "w-6 h-6" })}
-      </div>
-      <h3 className="text-white font-bold mb-2">{title}</h3>
-      <p className="text-sm text-slate-500 leading-relaxed">{desc}</p>
-    </div>
-  );
-}
-
-function StatCard({ label, value, icon, color }) {
-  const colors = {
-    blue: 'text-blue-400 bg-blue-400/10 border-blue-400/20',
-    red: 'text-red-400 bg-red-400/10 border-red-400/20',
-    emerald: 'text-emerald-400 bg-emerald-400/10 border-emerald-400/20',
+  const handleScanComplete = (data, isCustom = false) => {
+    setScanResult(data);
+    setHasCustomData(isCustom);
+    setActivePage('evidence');
   };
 
+  const handleMetadataUpdated = (newData) => {
+    setScanResult(newData);
+  };
+
+  const gapCount = scanResult?.summary?.gap_count || 0;
+
   return (
-    <div className="bg-[#0f172a] border border-slate-800 p-6 rounded-2xl flex items-center gap-5 hover:border-slate-700 transition-all group">
-      <div className={`p-4 rounded-2xl border ${colors[color]}`}>
-        {React.cloneElement(icon, { className: "w-6 h-6" })}
+    <div className="min-h-screen bg-[#070a12] text-slate-200 font-sans selection:bg-emerald-500/20 selection:text-emerald-300">
+      {/* Left Sidebar */}
+      <Sidebar
+        activePage={activePage}
+        onNavigate={setActivePage}
+        hasCustomData={hasCustomData}
+        onReloadDemo={loadDemoScan}
+        gapCount={gapCount}
+      />
+
+      {/* Main Content Area */}
+      <div className="pl-60 min-h-screen flex flex-col">
+        {/* Sticky Top Header */}
+        <Header
+          onStartScan={() => setActivePage('scan')}
+          searchQuery={globalSearch}
+          onSearchChange={setGlobalSearch}
+          gapCount={gapCount}
+        />
+
+        {/* Dynamic Page Router */}
+        <main className="flex-1 max-w-7xl w-full mx-auto p-6">
+          {activePage === 'dashboard' && (
+            <DashboardPage
+              data={scanResult}
+              onNavigate={setActivePage}
+              onOpenMetadataModal={(item) => setEditingItem(item)}
+            />
+          )}
+
+          {activePage === 'scan' && (
+            <ScanPage
+              onScanComplete={(data, isCustom) => handleScanComplete(data, isCustom)}
+            />
+          )}
+
+          {activePage === 'evidence' && (
+            <EvidencePage
+              data={scanResult}
+              onNavigateToScan={() => setActivePage('scan')}
+              onLoadDemo={loadDemoScan}
+              onOpenMetadataModal={(item) => setEditingItem(item)}
+            />
+          )}
+
+          {activePage === 'gaps' && (
+            <GapsPage
+              data={scanResult}
+              onNavigateToScan={() => setActivePage('scan')}
+              onLoadDemo={loadDemoScan}
+              onOpenMetadataModal={(item) => setEditingItem(item)}
+            />
+          )}
+
+          {activePage === 'accuracy' && <AccuracyPage />}
+          {activePage === 'rules' && <RulesPage />}
+          {activePage === 'demos' && <DemosPage />}
+          {activePage === 'about' && <AboutPage />}
+        </main>
       </div>
-      <div>
-        <div className="text-xs uppercase tracking-widest font-bold text-slate-500 mb-1">{label}</div>
-        <div className="text-3xl font-black text-white">{value}</div>
-      </div>
+
+      {/* Interactive Metadata Remediation Modal */}
+      {editingItem && (
+        <MetadataModal
+          item={editingItem}
+          onClose={() => setEditingItem(null)}
+          onUpdated={handleMetadataUpdated}
+        />
+      )}
     </div>
   );
 }

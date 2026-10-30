@@ -1,6 +1,29 @@
-.venv/
+# Python
 __pycache__/
-*.pyc
-.pytest_cache/
 *.egg-info/
-docs/questions.md
+.pytest_cache/
+*.pyc
+*.pyo
+
+# Virtual environments
+.venv/
+venv/
+.env
+
+# Frontend
+node_modules/
+dist/
+
+# Data artifacts
+data/temp_dump.csv
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Reports (generated)
+reports/

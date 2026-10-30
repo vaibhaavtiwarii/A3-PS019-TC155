@@ -1,2 +1,5 @@
 pyyaml
 streamlit
+fastapi
+uvicorn[standard]
+typer
