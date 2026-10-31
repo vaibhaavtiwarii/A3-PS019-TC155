@@ -39,8 +39,9 @@ export default function Sidebar({
       {/* Brand Monogram Header */}
       <div className="p-4 border-b border-[#1e2433] bg-[#0c0e14]">
         <div className="flex items-center gap-2.5">
-          <div className="w-8 h-8 rounded-xl shadow-md shadow-amber-500/10 border border-[#1e2433] bg-[#11141d] flex items-center justify-center p-1">
+          <div className="w-8 h-8 rounded-xl shadow-md shadow-amber-500/10 border border-[#1e2433] bg-[#11141d] flex items-center justify-center p-1 relative z-50">
             <PrivexisLogo />
+            <div className="absolute inset-0 flex items-center justify-center text-xs text-red-500 font-bold bg-red-500/10 rounded-full">DEBUG: Logo Rendered</div>
           </div>
           <div>
             <div className="flex items-center gap-1.5">

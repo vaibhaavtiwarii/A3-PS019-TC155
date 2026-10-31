@@ -105,6 +105,7 @@ export default function App() {
             <Route path="/rules" element={<RulesPage />} />
             <Route path="/demos" element={<DemosPage />} />
             <Route path="/about" element={<AboutPage />} />
+          <Route path="/test-logo" element={<TestLogoPage />} />
           </Routes>
         </main>
       </div>
