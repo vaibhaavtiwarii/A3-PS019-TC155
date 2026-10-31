@@ -6,21 +6,22 @@
 
 Team **Infynex** · AIORI Hackathon 3 · Problem Statement **PS-019** (Cybersecurity)
 
-![React](https://img.shields.io/badge/-REACT-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![FastAPI](https://img.shields.io/badge/-FASTAPI-005571?style=for-the-badge&logo=fastapi&logoColor=white)
-![Python](https://img.shields.io/badge/-PYTHON-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Vite](https://img.shields.io/badge/-VITE-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/-TAILWIND%20CSS-38B2AC?style=for-the-badge&logo=tailwindcss&logoColor=white)
-![Category](https://img.shields.io/badge/CATEGORY-CYBERSECURITY-E04848?style=for-the-badge&labelColor=555555)
+[![Live demo](https://img.shields.io/badge/LIVE%20DEMO-OPEN%20APP-0F766E?style=flat-square&logo=vercel&logoColor=white)](https://a3-ps-019-tc-155.vercel.app/)
+[![Repo](https://img.shields.io/badge/SOURCE-GITHUB-24292F?style=flat-square&logo=github&logoColor=white)](https://github.com/aiori-hackathon/A3-PS019-TC155)
+![Python](https://img.shields.io/badge/Python-3.11-4F46E5?style=flat-square&logo=python&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-backend-0F766E?style=flat-square&logo=fastapi&logoColor=white)
+![React](https://img.shields.io/badge/React-frontend-0369A1?style=flat-square&logo=react&logoColor=white)
+![Tailwind](https://img.shields.io/badge/Tailwind-CSS-7C3AED?style=flat-square&logo=tailwindcss&logoColor=white)
+![Track](https://img.shields.io/badge/Track-Cybersecurity-B45309?style=flat-square)
 
 </div>
 
 ---
 
-Explore the live Privexis web application: [![Privexis](https://img.shields.io/badge/PRIVEXIS-DEPLOYED%20WEBAPP-2563EB?style=for-the-badge&labelColor=0B1220)](https://a3-ps-019-tc-155.vercel.app/)
+Try the deployed web app: [![Open Privexis](https://img.shields.io/badge/OPEN-PRIVEXIS%20WEB%20APP-0F766E?style=flat-square)](https://a3-ps-019-tc-155.vercel.app/)
 
 <!-- Add these once you have the links, then delete this comment:
-Watch the complete walkthrough of Privexis on YouTube: [![YouTube](https://img.shields.io/badge/YOUTUBE-WATCH%20INTRO-FF0000?style=for-the-badge&logo=youtube&logoColor=white&labelColor=555555)](YOUTUBE_URL)
+Watch the complete walkthrough of Privexis on YouTube: [![YouTube](https://img.shields.io/badge/VIDEO-WALKTHROUGH-BE123C?style=flat-square&logo=youtube&logoColor=white)](YOUTUBE_URL)
 -->
 
 ---
@@ -53,7 +54,7 @@ CSV / SQLite ─► connectors ─► sampler ─► rule engine ─► linker �
 3. **Link** flagged columns to `config/metadata.yaml` and check them against `config/checklist.yaml` (purpose, retention, owner).
 4. **Report** the inventory with evidence, masked sample values and the gaps found.
 
-See [`PSEUDOCODE.md`](PSEUDOCODE.md) for the core algorithm and [`docs/HOW_IT_WORKS.md`](docs/HOW_IT_WORKS.md) for details.
+See [`PSEUDOCODE.md`](PSEUDOCODE.md) for the core algorithm.
 
 ## Web app
 
@@ -136,7 +137,6 @@ src/privexis/   engine, validators, sampler, linker, pipeline, evaluator, CLI
 config/         rules.yaml, checklist.yaml, metadata.yaml
 data/           sample data and hand-labelled answer keys
 frontend/       React + Vite + Tailwind UI
-docs/           how it works, labelling guide, demo script
 tests/          pytest suite
 ```
 
