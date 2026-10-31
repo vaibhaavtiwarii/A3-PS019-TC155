@@ -40,6 +40,13 @@ _ALLOWED_ORIGINS = [
     "https://a3-ps-019-tc-155.vercel.app",
 ] + [o.strip() for o in os.environ.get("CORS_ORIGINS", "").split(",") if o.strip()]
 
+# Browser origins allowed to call this API. The deployed frontend must be listed, or the
+# browser blocks every request. Extra origins: set CORS_ORIGINS="https://a.com,https://b.com".
+_ALLOWED_ORIGINS = [
+    "http://localhost:5173", "http://localhost:5174", "http://localhost:5175",
+    "https://a3-ps-019-tc-155.vercel.app",
+] + [o.strip() for o in os.environ.get("CORS_ORIGINS", "").split(",") if o.strip()]
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=_ALLOWED_ORIGINS,
@@ -270,6 +277,14 @@ def get_accuracy():
         h_result = run_pipeline(h_sources, rules, scoring, {}, checklist)
         h_truth = load_labels(holdout_labels)
         out["holdout"] = evaluate(h_result.findings, h_truth)
+
+    # Unseen generated set (names and vocabulary the rules were not written against)
+    unseen_dir = DATA_DIR / "stress" / "sealed"
+    unseen_labels = unseen_dir / "labels.csv"
+    if unseen_labels.exists():
+        u_result = run_pipeline(find_sources(unseen_dir), rules, scoring, {}, checklist)
+        u_truth = {k: v.split("|")[0] for k, v in load_labels(unseen_labels).items()}
+        out["unseen"] = evaluate(u_result.findings, u_truth)
 
     return out
 

@@ -1,0 +1,66 @@
+source,table,column,purpose,retention,owner
+sealed_01.csv,,id_number,Two-factor authentication,Statutory (7 years),HR
+sealed_01.csv,,reach_me,Support ticketing,Until consent withdrawn,HR
+sealed_01.csv,,tenant,Support ticketing,Closure + 180 days,Platform team
+sealed_01.csv,,email_primary,KYC identity verification,24 months,Security team
+sealed_02.csv,,login,Order fulfilment,Statutory (7 years),Security team
+sealed_02.csv,,emergency_contact,Support ticketing,Until consent withdrawn,HR
+sealed_02.csv,,client,KYC identity verification,Closure + 180 days,Security team
+sealed_02.csv,,PANCARD,KYC identity verification,90 days,Support team
+sealed_02.csv,,dt_of_birth,,90 days,Platform team
+sealed_03.csv,,*,Order fulfilment,24 months,HR
+sealed_04.csv,,identity_proof,Order fulfilment,90 days,Security team
+sealed_04.csv,,PAYEE,KYC identity verification,90 days,Support team
+sealed_04.csv,,tel_no,Two-factor authentication,Until consent withdrawn,Security team
+sealed_04.csv,,dob_text,Payroll processing,90 days,HR
+sealed_04.csv,,mail_address,Two-factor authentication,90 days,HR
+sealed_05.sqlite,records,login,Payroll processing,Statutory (7 years),Compliance
+sealed_05.sqlite,records,client,,Closure + 180 days,Security team
+sealed_05.sqlite,records,dt_of_birth,,Until consent withdrawn,Compliance
+sealed_05.sqlite,records,aadhaar_uid,Fraud monitoring,TBD,Platform team
+sealed_06.csv,,e-mail,Two-factor authentication,,Security team
+sealed_06.csv,,col_phone,TBD,,Platform team
+sealed_06.csv,,aadhaar_uid,Fraud monitoring,,Platform team
+sealed_07.csv,,taxpayer_ref,Two-factor authentication,Until consent withdrawn,
+sealed_07.csv,,notify_to,Customer communication,Statutory (7 years),
+sealed_07.csv,,date_born,,Statutory (7 years),Platform team
+sealed_07.csv,,passenger_name,Order fulfilment,Statutory (7 years),Platform team
+sealed_07.csv,,emergency_contact,Two-factor authentication,90 days,Support team
+sealed_08.csv,,E-MAIL,Customer communication,24 months,Platform team
+sealed_08.csv,,MOBILE_PRIMARY,TBD,24 months,Compliance
+sealed_08.csv,,bday,Order fulfilment,90 days,Security team
+sealed_09.csv,,login,Payroll processing,Closure + 180 days,Security team
+sealed_09.csv,,tenant,Order fulfilment,TBD,Platform team
+sealed_10.sqlite,records,emailid,,TBD,Platform team
+sealed_10.sqlite,records,whatsapp_number,Support ticketing,Closure + 180 days,Platform team
+sealed_10.sqlite,records,dt_of_birth,KYC identity verification,24 months,Platform team
+sealed_10.sqlite,records,kyc_document_no,TBD,90 days,Support team
+sealed_11.csv,,mobile_primary,,Until consent withdrawn,Platform team
+sealed_11.csv,,borrower,Fraud monitoring,90 days,HR
+sealed_11.csv,,BIRTHDATE,Fraud monitoring,Statutory (7 years),Support team
+sealed_11.csv,,login,Fraud monitoring,24 months,
+sealed_12.csv,,email_primary,Payroll processing,Closure + 180 days,Security team
+sealed_12.csv,,pancard,KYC identity verification,24 months,HR
+sealed_12.csv,,passenger_name,,24 months,Security team
+sealed_12.csv,,birthdate,Order fulfilment,Until consent withdrawn,HR
+sealed_12.csv,,reach_me,Two-factor authentication,Statutory (7 years),Compliance
+sealed_13.csv,,identity_proof,,TBD,HR
+sealed_13.csv,,tel_no,Payroll processing,TBD,HR
+sealed_13.csv,,email_primary,,,HR
+sealed_13.csv,,tenant,Order fulfilment,,Security team
+sealed_14.csv,,date_born,,,Compliance
+sealed_14.csv,,notify_to,KYC identity verification,90 days,Support team
+sealed_14.csv,,cellphone,Fraud monitoring,24 months,Compliance
+sealed_14.csv,,PATIENT,KYC identity verification,90 days,Support team
+sealed_14.csv,,kyc_document_no,Customer communication,Statutory (7 years),Support team
+sealed_text.csv,,feedback,Customer communication,Closure + 180 days,
+sealed_text.csv,,call_log,Payroll processing,Statutory (7 years),Platform team
+sealed_mixed.csv,,contact,TBD,TBD,Platform team
+sealed_sparse.csv,,alt_email,Two-factor authentication,Until consent withdrawn,Security team
+sealed_sparse.csv,,old_mobile,KYC identity verification,Until consent withdrawn,Compliance
+sealed_unnamed.csv,,col_1,KYC identity verification,90 days,Platform team
+sealed_unnamed.csv,,col_2,Two-factor authentication,Until consent withdrawn,Platform team
+sealed_unnamed.csv,,col_3,Support ticketing,Statutory (7 years),Security team
+sealed_unnamed.csv,,col_4,Fraud monitoring,Closure + 180 days,
+sealed_01.csv,,legacy_field_1,Historic campaign,12 months,Marketing
+sealed_01.csv,,legacy_field_2,Historic campaign,12 months,Marketing

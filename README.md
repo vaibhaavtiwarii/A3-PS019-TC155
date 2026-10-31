@@ -70,14 +70,17 @@ See [`PSEUDOCODE.md`](PSEUDOCODE.md) for the core algorithm.
 
 ## Accuracy
 
-Measured per column, on hand-labelled data, with the code in this repository (`/api/accuracy`, or `pytest`):
+Measured per column on labelled data, with the code in this repository (`/api/accuracy`, the Accuracy page, or `pytest tests/test_accuracy.py`):
 
 | Set | Columns | Precision | Recall | F1 | What it tells you |
 |---|---|---|---|---|---|
-| Main (`data/`) | 22 | 1.00 | 0.67 | 0.80 | Written alongside the rules, so **not** a generalisation measure |
-| Holdout (`data/holdout/`) | 21 | 0.67 | 0.83 | 0.74 | Files the rules were not written against |
+| Main (`data/`) | 22 | 1.00 | 1.00 | 1.00 | Hand-labelled. Rules were adjusted while looking at it, so this is **not** a generalisation measure |
+| Holdout (`data/holdout/`) | 21 | 1.00 | 1.00 | 1.00 | Hand-labelled. Also seen while tuning |
+| **Unseen generated set** (`data/stress/sealed/`) | 180 | **0.89** | **0.82** | **0.86** | Different names and column vocabulary from the set used for tuning (`data/stress/tune/`). **The fairest estimate here**, though its results were looked at twice during development |
 
-Both sets are **small**. A handful of columns decides each number, so expect wide error bars. Treat these as a transparent starting point, not a guarantee. The Accuracy page shows the per-class breakdown and every miss.
+The unseen set is produced by `scripts/generate_stress.py` (fixed seed) and includes deliberately hard columns: neutral names (`tenant`, `payee`), order numbers and SKU-like codes, hire dates, JSON profile columns, mixed contact columns, free-text notes, empty columns, and Latin-1 / semicolon-delimited files. Expect real-world data to land near the unseen figures, not the 1.00 rows.
+
+Where it still fails (visible on the Accuracy page): person names under neutral headers go to "needs review" instead of being flagged, and PAN-shaped product codes can be flagged unless `strict_pan: true` is set in `config/rules.yaml`.
 
 ## Run it locally
 
@@ -115,7 +118,7 @@ pytest
 | GET | `/api/health` | Liveness check |
 | POST | `/api/scan` | Upload CSV/SQLite files (max 10 MB each) and scan them |
 | POST | `/api/scan-demo` | Scan the bundled sample data |
-| GET | `/api/accuracy` | Precision / recall on the labelled sets |
+| GET | `/api/accuracy` | Precision / recall on the three evaluation sets |
 | GET | `/api/rules` | Active detection rules |
 | GET | `/api/demos` | Hard-case demonstrations |
 | POST | `/api/metadata/update` | Record purpose / retention / owner for a column |
@@ -135,7 +138,8 @@ The deployed frontend origin (`https://a3-ps-019-tc-155.vercel.app`) is already 
 api/            FastAPI app
 src/privexis/   engine, validators, sampler, linker, pipeline, evaluator, CLI
 config/         rules.yaml, checklist.yaml, metadata.yaml
-data/           sample data and hand-labelled answer keys
+data/           sample data, hand-labelled answer keys, generated unseen set
+scripts/        generate_stress.py (regenerates the unseen set)
 frontend/       React + Vite + Tailwind UI
 tests/          pytest suite
 ```
@@ -143,7 +147,8 @@ tests/          pytest suite
 ## Known limitations
 
 - Sampling: only a bounded number of values per column is checked, so rare values in large tables can be missed.
-- Columns with neutral names (for example `tenant`, `payee`) rely on value shape alone and may be missed or sent to review.
+- Columns with neutral names (for example `tenant`, `payee`) rely on value shape alone; person names there are sent to review, not flagged.
+- A PAN-shaped product code can be flagged as a government ID (set `strict_pan: true` to require a real holder-type letter, at the cost of missing synthetic PANs with arbitrary letters).
 - Name detection is heuristic. It uses shape rules, not a trained model.
 - Metadata edits made in the web app are written to the server's `config/metadata.yaml`. Treat the hosted demo as single-user.
 

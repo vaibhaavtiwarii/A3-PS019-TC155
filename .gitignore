@@ -14,8 +14,6 @@ venv/
 node_modules/
 dist/
 
-# Data artifacts
-data/temp_dump.csv
 
 # IDE
 .vscode/
@@ -27,3 +25,4 @@ Thumbs.db
 
 # Reports (generated)
 reports/
+*.log

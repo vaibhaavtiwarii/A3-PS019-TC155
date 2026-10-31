@@ -1,0 +1,261 @@
+status,tracking_id,pet_name,birth_dt,usr_contact,national_id,company_name,recipient_name,email,account_no
+dormant,6146227746,Rocky,1974-01-14,+91 61629 79932,CTJFO6451U,Northwind Traders,Hannah Naidu,chloe.khanna@example.com,935668939335
+active,7622056338,Simba,11/03/1990,+916322550158,3834-9059-1064,Globex Industries,Lakshmi King,jenniferansari@corp.example.in,699268349724
+active,9204543603,Simba,21 Aug 1971,98300-99241,WYJCJ3161D,Acme Supplies,Asha Anderson,lbose@example.com,318706991792
+dormant,7997977314,Bruno,,74361-55214,5181 2313 5900,Acme Supplies,Elizabeth Agarwal,grace.menon@corp.example.in,708088725284
+active,6852440212,Max,04/11/1993,7929347048,7314-6968-5315,Northwind Traders,Leila Kulkarni,abhatt@mail.example.org,880051755217
+active,8883734351,Tommy,12 Aug 1995,7608392075,7383-9303-9700,Initech Systems,David Gupta,aaravmoore@example.com,801913503132
+active,9301773354,Bella,2004-01-30,09141058738,CNYPW4608P,Initech Systems,Anil Pandey,jose.kumar@demo-mail.net,796671762880
+active,8450766206,Simba,8 Jan 1997,(+91)6904455409,JLGBD6049K,Stark Fabrication,Joseph Menon,david.gupta44@demo-mail.net,708507836404
+dormant,8891032616,Bruno,3 Jun 1972,+91 62906 65005,IPPFA6293K,Orbit Logistics Pvt Ltd,Amit Anderson,deepak_davis@mail.example.org,364417822801
+closed,7817160624,Simba,01-06-2004,+919236134375,CKNPB4572X,Globex Industries,Hannah Jain,lily.naidu@corp.example.in,200513755743
+active,9629668679,Bella,22/01/2003,+91 82442 61131,4129-4341-9742,Orbit Logistics Pvt Ltd,Lucas Brown,isabella_mehta@mail.example.org,196249341356
+active,8751436243,Luna,23-02-1950,+91 92340 07148,TRNAZ7626X,Tyrell Components,Emma Garcia,lucasjones@demo-mail.net,241015400745
+closed,6463088374,Rocky,1951-04-14,09104189651,7777-6469-7737,Globex Industries,Manoj Gupta,isabella_king50@example.com,853376153801
+dormant,9037598447,Tommy,1990-12-06,+91 98105 86658,VGMLN6687E,Globex Industries,Manoj Bose,juan_chatterjee@demo-mail.net,442288103815
+dormant,8679637444,Coco,1953-01-28,(+91)8302291231,CKSFU6535Q,Orbit Logistics Pvt Ltd,Aditya Nair,lghosh@mail.example.org,944893163111
+active,8075318610,Luna,2005-12-20,8126115749,8821 6255 4494,Acme Supplies,Liam Anderson,deepak.patel@mail.example.org,372222555715
+closed,7818693256,Simba,8 Feb 1990,78190-44776,HFHCA0580C,Hooli Networks,Gaurav Moore,kavita.kumar@demo-mail.net,538666771813
+active,7711711891,Luna,,08037484507,7160-8660-3701,Globex Industries,Gopal Mishra,manoj.gupta@mail.example.org,705120965651
+active,9649099628,Bella,1977-02-12,(+91)9535025504,TDLJA9880X,Northwind Traders,Ankit Naidu,arun_patel@example.com,440930048520
+dormant,8395521474,Coco,04-12-1985,(+91)7915590744,592366129927,Northwind Traders,Jack Nair,ddavis20@corp.example.in,808583098259
+closed,8835833994,Coco,1961-12-18,+919736090109,ZZFPA1773X,Hooli Networks,Isha Jain,arjun_bose+bank@example.com,359115288632
+closed,8566134096,Bella,4 May 2001,68427-34324,BUXPM8583D,Stark Fabrication,Kunal Kapoor,lily_patel@mail.example.org,579045191373
+dormant,9340334187,Bruno,1973-02-18,7815545914,211386959323,Hooli Networks,Ahmed Ghosh,lily_brown@example.com,720291019165
+closed,6376590935,Rocky,13-09-1993,9236323325,748455043024,Orbit Logistics Pvt Ltd,Manoj Malhotra,ddas@example.com,439525253884
+dormant,6571643318,Max,,+91 70230 23869,MNWPI0080L,Acme Supplies,Aarav Miller,harish.nair+bank@mail.example.org,368783721862
+closed,6772656091,Bella,26 Dec 1968,69903-47385,WUNPI9352B,Orbit Logistics Pvt Ltd,Kavita Kulkarni,hbhatt+promo@mail.example.org,568927969743
+dormant,9110534720,Rocky,27-07-1979,7278250179,EGQAD0614V,Orbit Logistics Pvt Ltd,Jessica Miller,lakshmiansari@corp.example.in,685452066247
+dormant,9598768711,Tommy,01/12/1983,93033-66244,863770940468,Orbit Logistics Pvt Ltd,Chloe Patel,henry.chatterjee+bank@example.com,506517855336
+dormant,9179224742,Bruno,21/10/1957,7815043367,TDCCV6463M,Hooli Networks,Anjali Jain,llee@demo-mail.net,805655819917
+closed,6052223734,Max,15-07-1965,(+91)6672600002,319981163905,Initech Systems,Emma Mishra,elena_kulkarni@mail.example.org,739820482083
+dormant,6020242630,Tommy,1962-02-24,+918414533173,9870-9645-2677,Hooli Networks,Ganesh Iyer,lucas_ghosh@corp.example.in,206864351462
+active,6930513349,Simba,1958-09-20,09946210114,6806-8318-2529,Orbit Logistics Pvt Ltd,Linda Gupta,hannah.martin@mail.example.org,619923021928
+dormant,6872608941,Rocky,08/01/1983,09805324255,NYMLH2451F,Hooli Networks,Chloe Garcia,kavitagupta@corp.example.in,206815825429
+dormant,7939401096,Luna,12 Jan 1968,(+91)9500191693,7406-6458-9186,Hooli Networks,Chloe Ghosh,kiran_bhatia@corp.example.in,195200119397
+dormant,6587792693,Rocky,18-03-2000,+917730781032,9383-7644-9284,Acme Supplies,Kabir Miller,leila.pandey@corp.example.in,429045816829
+dormant,7548720221,Bella,1977-02-21,7261020882,8174 7324 4082,Stark Fabrication,Joseph Chauhan,geeta.kumar@mail.example.org,993765495114
+dormant,6811995961,Luna,10-01-1997,(+91)6255844506,VDNLA6949H,Initech Systems,Fiona Mehta,aisha.martin+bank@mail.example.org,449728253519
+dormant,7859093501,Bruno,17-02-1972,6580385199,COYBM4491N,Initech Systems,Juan Khanna,kmishra@corp.example.in,969695414637
+dormant,8718346310,Rocky,4 Apr 1958,(+91)8764856015,587448343296,Tyrell Components,Anita Joshi,aarav.malhotra@mail.example.org,472772839656
+dormant,6824274939,Simba,30-03-1996,07036921413,891520562956,Tyrell Components,Jessica Gupta,karen.khanna@demo-mail.net,504774831642
+closed,6469363278,Max,1961-04-14,07962144299,BKLHW6313T,Northwind Traders,Deepika Davis,james_banerjee@mail.example.org,968786878460
+closed,9027987155,Luna,12-02-1965,08835893324,PDVPW1296Q,Acme Supplies,Harish Davis,aisha.brown+bank@example.com,264635799443
+dormant,6231769101,Coco,18/04/1991,+91 73264 98879,6563-1430-2023,Hooli Networks,Lucas Malhotra,kabir.brown+bank@mail.example.org,113263105018
+closed,7990075784,Rocky,27 May 1995,06147557326,6998 1537 3892,Northwind Traders,Amit Bhatt,fjain+bank@demo-mail.net,726268435653
+dormant,6455807050,Bella,09/01/1984,73165-62427,9498 2234 4351,Stark Fabrication,Fiona Brown,lmishra@example.com,489060580888
+active,6659673790,Coco,1978-03-09,76441-46303,4435-0328-6647,Hooli Networks,Lucas Martin,emma.kapoor@example.com,458509687682
+active,8714623755,Max,22/11/1956,8964183204,YMFPB3216T,Tyrell Components,Jaya Kumar,kbhatt+promo@mail.example.org,646374947542
+dormant,8801963886,Coco,5 Mar 1958,(+91)8796108471,4028-2317-3324,Stark Fabrication,Ganesh Kulkarni,aarav_nair@example.com,965251102310
+dormant,6157442535,Max,22/01/1955,(+91)6181581084,KSMPH4247S,Northwind Traders,Manoj Brown,agupta@demo-mail.net,823354375076
+dormant,8107803122,Coco,29/08/1995,+919900336954,9271 1011 3197,Acme Supplies,Deepika Moore,chloe.kapoor11@example.com,258564341738
+closed,8830386617,Simba,14-01-1951,96622-45944,NAHTP3100A,Tyrell Components,Jose Iyer,lucasjohnson@mail.example.org,841775760282
+closed,7435303013,Luna,13/04/1964,(+91)9607248677,8664-6552-3011,Stark Fabrication,Anna Ansari,adesai@example.com,845542142317
+dormant,9653792203,Coco,,9446508701,CPOJM5703L,Stark Fabrication,Aisha Lee,jaya.chauhan99@corp.example.in,810253153655
+active,7965855470,Coco,25-10-1957,+91 62856 04454,2081 7235 8612,Wayne Distribution,Charles Anderson,leilabose@mail.example.org,230923454366
+dormant,9621773803,Tommy,29/11/2005,+917934576118,8111-7296-2903,Wayne Distribution,Juan Moore,isha_nair@corp.example.in,380540874432
+dormant,7149312340,Max,04-01-1974,+917772085542,961067947719,Globex Industries,Ahmed Gupta,jennifer_hall@example.com,615514687782
+active,7277931407,Coco,11/06/1973,8964053268,6846-8457-4276,Northwind Traders,Charles Martin,ankit.jones+promo@example.com,700939860581
+closed,6449609699,Luna,1985-12-01,9052018431,APLLN4515N,Stark Fabrication,Elizabeth Das,danielkhanna@demo-mail.net,961959929917
+active,9750453070,Max,01/01/1955,06379390214,VQWPS0981T,Stark Fabrication,Aisha Miller,adas+bank@example.com,284278877153
+dormant,8525955640,Coco,,+916618596094,TOWJV9772T,Stark Fabrication,Arun Das,kunalbose@mail.example.org,516134859715
+closed,9703350527,Coco,22 Mar 1953,+919678448467,857482279937,Northwind Traders,Arun Iyer,jessica_hall+bank@mail.example.org,243764277650
+active,9926922134,Tommy,05-12-1976,+91 61035 94944,5090 4013 2985,Orbit Logistics Pvt Ltd,Jack Miller,lbanerjee+bank@demo-mail.net,430414852405
+dormant,9402196614,Bella,16 Sep 1973,9242031769,722819580057,Stark Fabrication,Juan Iyer,jkapoor@corp.example.in,540178410027
+dormant,8975038417,Bruno,,07699422550,WLHAU8368Y,Stark Fabrication,Jack Garcia,aishakapoor+promo@corp.example.in,514244796279
+dormant,7182633608,Coco,03-06-1972,+91 77606 97927,5992-9872-4284,Acme Supplies,Isabella Ghosh,deepika.kapoor72@demo-mail.net,978242618975
+dormant,6353890688,Bruno,13-01-1992,8509357290,5703-2074-1478,Northwind Traders,Kabir Bhatia,gmalhotra@demo-mail.net,319045974666
+active,9581103933,Max,11/03/1994,(+91)9034088431,2749-4169-8170,Hooli Networks,James Desai,kunalkapoor@example.com,986408899308
+closed,7928592213,Luna,16/01/1992,+91 85752 62099,PBNAO3770X,Orbit Logistics Pvt Ltd,Chloe Ansari,liam_hall@example.com,959220755446
+active,7153353089,Bella,11 Dec 1969,(+91)6473757965,ATLCO6072X,Northwind Traders,Jessica Agarwal,anilgupta+bank@mail.example.org,922271205024
+closed,7844207567,Luna,26-09-1975,06117528217,KMLPF5276B,Globex Industries,Hari Malhotra,ahmedpatel@corp.example.in,270448083475
+closed,7158156950,Bella,19-03-1990,7091393721,490257602637,Globex Industries,Jessica Mishra,kiran.bhatia@mail.example.org,597879929506
+closed,8656339549,Max,23-06-1968,+91 63325 98797,2093 8573 7343,Acme Supplies,Harish Miller,arjun_brown@demo-mail.net,433129648552
+closed,7954612717,Bella,1997-01-29,7070601821,7915-4791-1353,Wayne Distribution,Isabella Chatterjee,kabirpandey76@mail.example.org,181472104782
+closed,8736260484,Rocky,1975-08-05,09599688853,7396 9757 9106,Globex Industries,Charles Menon,jchauhan@corp.example.in,939465462652
+closed,9949615505,Coco,28-07-1979,7262055193,PCQJU6028E,Stark Fabrication,Jack Kulkarni,carlos.bose@example.com,935515593712
+dormant,8282876241,Max,18 Dec 2005,6251170477,6292 7930 5125,Stark Fabrication,Kiran Khan,chloe_iyer@demo-mail.net,861075103923
+dormant,7096158897,Simba,19-05-1960,+918877405176,WECPU6340S,Initech Systems,Carlos Desai,arjun_gupta@mail.example.org,721396452781
+active,6900864535,Simba,26 Aug 1992,+919851761931,2300-3114-0641,Wayne Distribution,Carlos Iyer,krishna.pandey71@corp.example.in,417275315618
+dormant,8712231129,Tommy,18 Nov 1956,+91 84932 12087,270968651974,Northwind Traders,Arjun Joshi,anjalimishra+bank@corp.example.in,196591055518
+dormant,7873890415,Tommy,28-05-2007,+91 61802 91888,BDJPT4381C,Stark Fabrication,Fiona Jones,carlos_garcia@example.com,901242184379
+closed,9003975604,Bruno,1952-04-08,86565-35683,ZWAPV5943R,Initech Systems,Karen Desai,amoore+bank@mail.example.org,500172873361
+dormant,6844581537,Luna,,7264618435,XQDJF0465Q,Wayne Distribution,Anjali Malhotra,aansari@example.com,620938966748
+closed,8962420293,Bella,07/07/1968,6942627366,954196250955,Tyrell Components,David Brown,kunaljones@corp.example.in,430562632131
+active,7792613642,Bruno,29 Jan 1983,7059228825,JVSHK4923U,Stark Fabrication,Elizabeth Miller,anitajain+bank@example.com,506185304636
+active,8978085629,Max,1955-04-21,+91 92065 06355,YGYPC6549J,Acme Supplies,Fatima Gupta,lkapoor@demo-mail.net,993431552883
+active,6332681591,Rocky,22-03-2004,+916001468369,WEEPF9830Y,Stark Fabrication,Joseph Khanna,joseph_martin@corp.example.in,432096291137
+active,8986020242,Max,24-03-1952,08788585679,498120761467,Globex Industries,Lakshmi Nair,lily.jones@demo-mail.net,805660024594
+dormant,7373479493,Coco,07/04/1954,+919115046114,IXUPZ9232E,Orbit Logistics Pvt Ltd,Isha Banerjee,karen_bhatt@corp.example.in,499421098967
+dormant,6507986564,Coco,25/12/1956,9964305019,SANJR4884U,Globex Industries,Harish Martin,kiran_chauhan@mail.example.org,892240404022
+closed,8162785811,Simba,1992-03-26,+916413145261,SPOHN9310E,Tyrell Components,Emma Naidu,ethanbose@corp.example.in,313826867767
+active,7559683602,Luna,17-01-1953,(+91)6848125642,AKEBX4114N,Initech Systems,Lily Davis,lakshmi.bose@demo-mail.net,976523512340
+dormant,7610962906,Coco,2000-12-23,81595-56119,316757586384,Tyrell Components,Ethan Das,jennifer.joshi@corp.example.in,122806357324
+active,9808560072,Simba,30/04/1977,6300357282,FCIBY0884L,Acme Supplies,Chloe Garcia,leilaagarwal@mail.example.org,449619593085
+active,8629617722,Simba,18-07-1971,99358-40865,KVJBS9579X,Orbit Logistics Pvt Ltd,Gopal Bhatia,anil.martin@demo-mail.net,432014291895
+closed,9280972688,Bella,1994-05-19,+91 94642 98947,5085 4822 6374,Northwind Traders,Jessica Joshi,juan_khan@example.com,817303223056
+active,7689308579,Rocky,17-07-1951,(+91)6386460725,2691 6173 5628,Hooli Networks,Asha Gupta,lily.garcia+promo@example.com,656767216103
+active,8117459463,Bella,30/12/1980,07617642434,SMZPE7930H,Northwind Traders,Chloe Das,henrydavis88@example.com,309999264836
+dormant,7494321557,Rocky,6 Nov 1981,80751-27110,971445729390,Orbit Logistics Pvt Ltd,Joseph Naidu,carlos.hall@corp.example.in,559522367468
+active,8284945364,Max,27-01-1975,6846416597,5791 6853 2093,Tyrell Components,Krishna Brown,ethan.chauhan@mail.example.org,200637953292
+closed,6697597717,Max,1981-03-27,8809545699,MULPQ7521M,Initech Systems,James Kulkarni,amit.gupta+promo@corp.example.in,891043906804
+dormant,6393178860,Max,9 Jul 1956,+91 64965 23956,XEMBA1878X,Orbit Logistics Pvt Ltd,David Naidu,jose_desai@demo-mail.net,437709661706
+closed,8404620430,Bella,29/01/1962,9854794053,XESPU9670F,Northwind Traders,Lakshmi Nair,jessica.banerjee@example.com,355488780356
+closed,8408150253,Simba,,+91 93618 21808,IGCPI2809P,Acme Supplies,Deepak Banerjee,gpatel@corp.example.in,726170598153
+closed,7501302148,Bella,14 Oct 1976,(+91)6992783517,LUMLA8472L,Orbit Logistics Pvt Ltd,Jaya Ansari,henry_joshi@example.com,841137337792
+closed,9759865666,Max,2005-06-21,7300205132,6344 5582 8383,Initech Systems,Anna Jones,deepak_khanna@example.com,652048340983
+closed,9574758847,Bruno,13 May 2007,+919065072241,4041 3495 8234,Globex Industries,Kunal Bose,jessica.davis@mail.example.org,529622387300
+closed,9793994141,Bella,1974-12-06,+91 65008 96808,2706-6476-2023,Stark Fabrication,Aarav Khan,isha_malhotra+bank@example.com,835780312972
+active,9116961730,Bruno,1997-09-12,+91 90105 75988,926314112176,Orbit Logistics Pvt Ltd,James Patel,james.banerjee@mail.example.org,616066820090
+dormant,8728663555,Tommy,29 Dec 2005,71116-13574,660758432602,Orbit Logistics Pvt Ltd,Krishna Pandey,henrykhan10@corp.example.in,756323489577
+dormant,8614431322,Bruno,26 May 1995,9878498215,9763-2877-4968,Northwind Traders,Kavita King,arjun_mishra@example.com,249785696843
+dormant,7438970093,Luna,,+91 95796 26397,3353 7106 0710,Stark Fabrication,Manoj Ghosh,jnaidu@corp.example.in,977495455436
+dormant,8017013378,Bruno,1982-07-23,68748-14113,CWHTL4447S,Stark Fabrication,Lucas Gupta,adesai@corp.example.in,674426219985
+closed,9269026072,Bella,1979-02-20,7447766739,ECCPW5179C,Hooli Networks,Liam Chauhan,lakshmibrown+promo@mail.example.org,117160284436
+closed,9090159596,Bella,1958-10-23,(+91)9223902682,4130-4218-3758,Globex Industries,John Joshi,charleschauhan+promo@mail.example.org,987172631549
+dormant,8960837425,Bella,1980-01-18,8227728999,2164 7933 2823,Tyrell Components,Juan Desai,akhanna@demo-mail.net,370113256969
+closed,9151071715,Bella,30 Nov 1984,+918847000864,ZGZTP2984U,Orbit Logistics Pvt Ltd,Anil Iyer,elenamalhotra@corp.example.in,352668116556
+active,9687306095,Rocky,1998-04-07,9969025085,9689 8303 8087,Initech Systems,Anita Chatterjee,hchauhan@corp.example.in,129065884854
+active,7912722964,Bruno,25/08/1985,98851-50130,244243210106,Initech Systems,Linda Brown,jkumar@example.com,678881016254
+closed,8265364495,Max,,6392274530,260586287071,Northwind Traders,Elena Khanna,daniel.johnson@demo-mail.net,650610186291
+closed,9157127821,Luna,1960-05-27,63433-81365,6476-5612-1214,Northwind Traders,Emma Patel,gmiller@corp.example.in,733275097023
+dormant,8868513518,Max,23-07-1978,(+91)8999218494,7442-6853-7719,Hooli Networks,Gopal Mishra,ganesh.joshi@example.com,820703187456
+closed,8310966310,Coco,1992-09-19,+917163994430,TBTPA8929Z,Hooli Networks,Charles Hall,echatterjee@corp.example.in,357844360216
+dormant,9162334275,Max,1963-04-14,08846990752,237518057549,Stark Fabrication,Amit Ansari,kabir.chauhan+promo@demo-mail.net,474397615473
+closed,8491756124,Tommy,25 Jul 1952,9398814001,GMCPT9898W,Hooli Networks,Hannah Ghosh,danielpandey27@example.com,108979667417
+active,9501483521,Max,03-04-1973,09557776183,641971284033,Northwind Traders,John Gupta,manoj.nair@mail.example.org,380867118939
+dormant,6464975021,Luna,26-05-1969,+916221283428,6423 6373 0110,Wayne Distribution,Deepak Khan,anitabanerjee@corp.example.in,843339395411
+dormant,6600849183,Coco,30 Oct 1952,(+91)7246813922,4252-2158-3526,Acme Supplies,Fiona Patel,echauhan@demo-mail.net,290411240813
+closed,7375304630,Bella,31/05/1998,08758313661,NXAPM9469N,Northwind Traders,Kavita Kapoor,ethan_garcia64@mail.example.org,627404250123
+closed,8550095230,Bella,16/07/1998,+916158062643,3437-5591-7188,Globex Industries,Aarav Lee,john.patel@mail.example.org,326261077467
+active,9400837263,Tommy,10-10-2003,9041226770,KQWJE6457Y,Stark Fabrication,James Menon,jessica.davis@example.com,585828365878
+closed,6174308913,Simba,1960-03-10,+919347911010,4840-1065-0707,Tyrell Components,Aarav Bhatt,asha.iyer@corp.example.in,772690633545
+dormant,6416979216,Max,30 Mar 1998,8252884824,BREPX1523L,Hooli Networks,Daniel Desai,fjoshi@corp.example.in,197101243830
+dormant,9796078359,Simba,26-01-1962,+919662086390,4197-4207-8627,Tyrell Components,Jaya Miller,ethan.miller@example.com,741198410035
+active,9729576189,Tommy,6 Jun 1950,+91 97313 64106,6803 2759 1242,Tyrell Components,Ethan Khan,linda_bose@corp.example.in,338027396479
+active,6447167525,Bruno,,85590-22639,DZNCQ4405M,Hooli Networks,Chloe Kumar,elenabanerjee+bank@corp.example.in,438168171332
+active,7211190440,Simba,1951-09-04,(+91)6963919497,774464550097,Hooli Networks,Jennifer Jones,chloejohnson@corp.example.in,512657562284
+dormant,8201036591,Tommy,,9429859111,JFJPU3842A,Northwind Traders,Harish Chatterjee,charleshall@example.com,580289678386
+closed,6262124220,Bella,16 Jun 1999,+91 77827 03046,428022602670,Stark Fabrication,Linda Ansari,leila.lee@demo-mail.net,843050470450
+closed,8060482457,Bella,31-01-2004,76618-07062,3760 4026 0536,Stark Fabrication,Isabella Khanna,ethan_naidu@mail.example.org,695970510627
+dormant,7915000189,Bella,1955-05-11,+917168256296,INDJY3722G,Wayne Distribution,Hannah Bhatia,krishnamishra@demo-mail.net,507907931302
+active,7842467942,Tommy,19 Nov 1999,6774234124,5770-3265-2990,Wayne Distribution,Karen Kapoor,akulkarni@corp.example.in,642482938575
+dormant,9960347580,Bruno,01-09-1952,09074756657,9843-7766-1002,Wayne Distribution,Anjali Lee,hchauhan@demo-mail.net,553157323753
+dormant,7745200490,Bruno,19 Mar 1956,7943360998,231804718404,Orbit Logistics Pvt Ltd,Aisha Bose,karenbhatt@corp.example.in,411034222477
+active,9735706506,Coco,1957-08-06,(+91)8682898593,8412 1528 9490,Wayne Distribution,Jessica Lee,ljain@demo-mail.net,679019243913
+closed,7417741417,Luna,18/04/1963,75187-89738,4121-1863-3752,Globex Industries,Asha Garcia,manoj_naidu@corp.example.in,824883057401
+active,8706541491,Luna,21/08/1979,9234747888,WEFJV3084N,Wayne Distribution,Anna Kumar,jpandey@corp.example.in,968202837361
+closed,6643916464,Rocky,14-05-1958,+91 86876 12969,2283 7222 7038,Acme Supplies,Aarav Mehta,james_menon+promo@corp.example.in,495518850840
+closed,6654808576,Simba,1981-06-26,+917315758955,PJWLM2527H,Acme Supplies,John Bhatia,josenaidu@corp.example.in,774636256720
+dormant,7861370582,Max,1967-08-12,9172763284,6341-2888-9387,Northwind Traders,Gopal Bhatt,gauravjoshi@mail.example.org,486086124325
+active,8854575067,Rocky,1999-11-07,61186-20240,HUUPR9490F,Tyrell Components,Arjun Chatterjee,isabellakhanna@mail.example.org,815937435287
+closed,9438978083,Bruno,26 Apr 1969,93487-84335,8797 2415 1230,Stark Fabrication,Lakshmi Pandey,jbose+bank@example.com,710981515681
+closed,7530621239,Tommy,30 Jun 2001,+917828404466,DHOBS3953B,Orbit Logistics Pvt Ltd,Jose Lee,lkumar@corp.example.in,477369880387
+active,9679442974,Tommy,1992-06-29,(+91)9179840955,WIVPG3629G,Tyrell Components,Jack Kulkarni,cmartin@mail.example.org,777809850635
+active,7575257714,Coco,1998-09-12,90448-46938,TCAAK2772A,Globex Industries,Aditya Martin,gracenaidu@corp.example.in,284449574465
+dormant,8897504685,Rocky,1989-04-13,08373736382,NSSFA8963Y,Tyrell Components,Emma Bhatt,apandey@corp.example.in,850610702564
+active,9922118333,Simba,10 Apr 1968,(+91)7467024734,707904818564,Hooli Networks,Asha Mehta,fmehta36@corp.example.in,674123703779
+active,8831337120,Bruno,06/08/1951,6814048551,7097 0549 6845,Northwind Traders,Isha Bhatia,jaya_moore+bank@demo-mail.net,120247790127
+closed,6236674657,Simba,13-05-1952,+917934445160,7131-6167-7204,Initech Systems,Gopal Mehta,aghosh+bank@demo-mail.net,125385888272
+active,7171102885,Tommy,16/02/1982,9517812748,9655 5519 4445,Acme Supplies,Isabella Lee,ethan.king@mail.example.org,109497350501
+closed,9884052765,Simba,4 Jun 1978,+91 71638 54093,JTCPZ9013V,Stark Fabrication,Anna Davis,daniel.johnson@example.com,457425359988
+dormant,6703810320,Bella,1964-11-09,+916186894504,PWTHU2698S,Hooli Networks,Elena Kapoor,eiyer+promo@corp.example.in,124381982129
+active,9336974239,Rocky,25 Jan 1980,7230068277,QBHGW2517E,Orbit Logistics Pvt Ltd,Fiona Hall,jack_king@corp.example.in,573029831296
+dormant,7419071186,Tommy,,+91 99596 25381,LTXAK8063L,Acme Supplies,Hannah Mehta,josephdas@corp.example.in,833336511487
+active,8394134248,Coco,1952-04-02,+91 89867 15728,NZDPL1826Q,Northwind Traders,James Mishra,ddesai44@demo-mail.net,932644245302
+dormant,8046350868,Tommy,19/09/1962,+91 75142 85289,8782-7397-3951,Acme Supplies,Kabir Brown,amit_chauhan+bank@corp.example.in,449505110661
+dormant,9877231537,Coco,25 Dec 1999,80062-65784,566399688827,Northwind Traders,Kabir Iyer,chloedas@demo-mail.net,641929133684
+closed,9258402706,Rocky,2 Jan 1972,07399820113,6304-3784-9370,Northwind Traders,Ethan Khanna,charles_brown@corp.example.in,896061575279
+closed,9856905915,Bella,1981-01-21,7675788610,BXPPF4424W,Northwind Traders,John Johnson,elena_anderson@corp.example.in,440732669053
+active,8293020669,Tommy,1974-03-05,85799-47703,575744119767,Stark Fabrication,James Ansari,hari.ghosh@mail.example.org,254922610881
+closed,8967669958,Luna,25/09/1980,+91 70270 76042,6969-9963-6946,Globex Industries,Harish Banerjee,divyamishra@demo-mail.net,540789274110
+active,9881084331,Bella,17-05-1985,+919395599896,540364567751,Orbit Logistics Pvt Ltd,Ankit Gupta,anita.garcia@demo-mail.net,494038367809
+closed,8765422421,Tommy,19-10-1973,+917326700233,4467-5226-7606,Tyrell Components,Ankit Kumar,kavita_hall+promo@demo-mail.net,238624205421
+closed,7687905185,Luna,22/12/1961,(+91)9491171178,991907019540,Stark Fabrication,James Mishra,henry.davis@example.com,939289883374
+dormant,8528316510,Tommy,1975-11-08,(+91)8101552522,5288 7238 3891,Northwind Traders,Deepak Kulkarni,ebhatia+promo@mail.example.org,515624036609
+closed,6703042065,Bruno,,9952166391,898480571366,Globex Industries,Kiran Lee,jkumar@example.com,175911845274
+dormant,6124462490,Luna,,8688733162,8668-1638-9521,Wayne Distribution,Lily Nair,fchatterjee@corp.example.in,405322501976
+active,6639436862,Tommy,09-08-1961,8619003246,WLYFV1934V,Stark Fabrication,Kavita Ansari,elizabethmishra@demo-mail.net,599241739795
+dormant,9339521723,Simba,1964-02-20,+91 94498 86759,473478418007,Acme Supplies,Jaya Pandey,jennifer_naidu@example.com,236331795817
+dormant,6755456815,Luna,13/10/1997,85426-10494,8949 2612 1580,Stark Fabrication,Grace Kumar,aishabhatt+bank@corp.example.in,469578301818
+active,8376573663,Tommy,10/09/2007,+917904566501,WECLG8489P,Acme Supplies,Emma Mishra,kiran.mishra@demo-mail.net,831426784460
+dormant,6280333274,Luna,2002-07-29,+91 65726 10435,357285217896,Northwind Traders,Ethan Johnson,deepak_johnson@mail.example.org,398335249935
+dormant,7195924682,Luna,26 Dec 1988,7028171093,KFYPZ2445R,Initech Systems,Grace Desai,adityabrown@corp.example.in,432029781122
+closed,9233274830,Bella,17 Dec 1984,+91 87779 57256,HWTHL8286Y,Initech Systems,Karen Pandey,hchauhan@corp.example.in,774442811731
+closed,7197294914,Bella,2004-03-22,+919959789476,3492-6191-9075,Acme Supplies,Fatima Brown,ankit_chauhan@corp.example.in,834511097654
+closed,7126772524,Coco,24-10-1963,+91 93202 99113,7820-1813-4620,Globex Industries,Deepika Nair,kavita_naidu@mail.example.org,749189165503
+closed,8832745851,Luna,30 Nov 2002,(+91)6848141369,7692 3556 9893,Wayne Distribution,Divya Khanna,aarav.bose@example.com,387974618364
+dormant,9315243507,Bruno,1954-01-31,66186-67718,MYBPA0800Z,Wayne Distribution,Deepika Brown,lakshmi_anderson45@mail.example.org,976077090606
+dormant,8470921843,Luna,9 Dec 1951,8481315191,7712-9666-5213,Globex Industries,Carlos Mehta,kjohnson@corp.example.in,776336583525
+dormant,7808596306,Tommy,1997-04-30,07992564471,GCZHY4261S,Hooli Networks,Lily Brown,ashagupta@corp.example.in,598937994001
+active,7247338513,Bruno,10 Jul 1954,7461851411,PJLPH2843A,Northwind Traders,Divya Patel,anjalikulkarni@corp.example.in,827620371027
+dormant,6721356506,Max,1987-06-19,+917317577660,8114 8233 8383,Wayne Distribution,Ganesh Hall,apandey+bank@corp.example.in,357847753009
+closed,7297638978,Bella,21-04-1965,7552795557,LLTPB4204E,Hooli Networks,Fiona Jain,jaya.iyer@mail.example.org,535355585182
+closed,9967446848,Coco,26 May 2002,08455084984,CSJAQ5673W,Initech Systems,Grace Jain,jennifer_kumar@demo-mail.net,959360715671
+active,8211616420,Coco,1985-01-11,6001951423,VZIJP7808I,Hooli Networks,Deepika Kumar,isha.iyer@mail.example.org,747072694540
+dormant,7740856240,Luna,18/04/1964,(+91)6162782234,638591693745,Wayne Distribution,Arjun Bose,anita.gupta87@demo-mail.net,573984458358
+closed,8858173048,Coco,,63213-50583,BBCBO8881I,Hooli Networks,Arun Miller,gopaldavis@mail.example.org,344480484759
+dormant,9286212008,Tommy,05/07/1961,08373592388,RXFTP9915R,Stark Fabrication,Geeta Pandey,linda_desai@corp.example.in,362212420064
+closed,8244652796,Rocky,13 Jun 1978,9591913030,886607353239,Stark Fabrication,Isha Ghosh,jaya.kapoor@corp.example.in,774807471482
+active,7160961410,Luna,1984-09-15,+916272381319,396777570690,Globex Industries,Geeta Malhotra,aarav_mehta@demo-mail.net,882957427593
+active,6289465108,Luna,10/07/1957,09312566444,EMEPZ6932S,Globex Industries,Kabir Johnson,amenon@demo-mail.net,777217886067
+active,9167078860,Bruno,1994-06-11,6417004332,521390658199,Globex Industries,Divya Mishra,ckhan@corp.example.in,764457338742
+closed,9982530682,Bruno,,07967143111,OZDTQ7588K,Wayne Distribution,Harish Martin,jaya_bose@corp.example.in,728536606942
+dormant,9078219737,Rocky,12 Apr 1994,07423904846,3962 5207 6671,Acme Supplies,Kavita Desai,jessica_lee@mail.example.org,182215127915
+active,9792715083,Bruno,26/05/1982,9266529017,OPGCD1131T,Northwind Traders,Anil Ansari,asha.banerjee37@demo-mail.net,144620172724
+active,8285508740,Coco,29/04/2006,69627-99964,8758 1517 6207,Acme Supplies,Chloe Khanna,jessica_pandey+bank@corp.example.in,642205864521
+dormant,6241255048,Simba,17-03-1951,06661074910,MNNJU2967X,Initech Systems,Arjun Mehta,kkhanna@example.com,951750743760
+dormant,8019097748,Luna,02-04-1979,8395552125,9739-8965-8910,Initech Systems,Chloe Johnson,anna_jain@example.com,766695313726
+closed,7279555593,Luna,1998-02-19,7852455976,993348715124,Acme Supplies,Grace Hall,arun_menon@corp.example.in,663581022831
+dormant,9594982005,Coco,27-01-1971,9649623797,9675-1568-8364,Acme Supplies,Ganesh Johnson,aarav.khan@mail.example.org,191448275634
+dormant,9587266075,Tommy,1975-04-23,07235090072,651682005326,Hooli Networks,Carlos Iyer,amit_khanna@corp.example.in,685675555285
+closed,9009881743,Coco,08/07/1967,(+91)8686607643,3705-1062-3511,Hooli Networks,Harish Desai,ankit_joshi@demo-mail.net,726858670592
+closed,9978911415,Simba,23/02/1951,+91 75565 09613,AGQPO3153S,Globex Industries,Manoj Davis,emma_bhatia@example.com,319893963929
+closed,6178805953,Bella,18/02/2002,8378976823,AIPBV7358C,Wayne Distribution,Lucas Kulkarni,lakshmi_mishra@mail.example.org,865269136617
+active,6767099206,Max,1962-09-27,9580607631,8485 0432 9597,Wayne Distribution,Kavita Johnson,divya.johnson@mail.example.org,776887487669
+active,7015026328,Bella,1970-02-08,70293-56192,3973-5043-8634,Globex Industries,John Kumar,leiladesai@corp.example.in,193197994580
+active,6831997503,Coco,1986-06-06,+91 75435 55203,280024817152,Globex Industries,James Khanna,jack.bose@example.com,644310291256
+closed,6130681406,Luna,27-10-1956,+91 62798 25685,2256 0432 4974,Initech Systems,Joseph Kulkarni,joseph.martin@corp.example.in,299734066256
+dormant,9082005980,Coco,26 May 2005,6391285989,8847 3819 1396,Acme Supplies,Anna Garcia,amalhotra@demo-mail.net,848515368099
+active,7427881782,Tommy,1985-05-27,6421723643,7105 7520 9110,Stark Fabrication,Gaurav Mishra,divyagupta@corp.example.in,966562085258
+closed,8412213214,Rocky,1 Jan 1967,(+91)7340587202,7718-5952-9641,Orbit Logistics Pvt Ltd,Anil Bose,john.jones@demo-mail.net,870671148398
+active,8960019679,Coco,02-09-1980,(+91)7322184754,9251-2393-8761,Orbit Logistics Pvt Ltd,Aditya Miller,hannahchauhan@demo-mail.net,169800406944
+dormant,6673324015,Tommy,14/05/1950,6760187644,3606 4722 2411,Hooli Networks,Amit Bhatt,arjun_chauhan@demo-mail.net,379682043568
+closed,8639454676,Luna,17-02-2000,+918814349201,VFMHN7542N,Globex Industries,Lucas Desai,amit_martin@example.com,217913945054
+dormant,7476749341,Tommy,18/01/2004,+91 80321 45993,526213936409,Globex Industries,Kunal Brown,daniel_khan@mail.example.org,290600456032
+active,9383335781,Luna,4 Apr 1995,(+91)8192958849,WIVHQ9242Y,Stark Fabrication,Emma King,deepak.khanna@mail.example.org,987804312704
+closed,9289708522,Bruno,5 Apr 1977,(+91)9528524022,YXRBF1111N,Wayne Distribution,Geeta Das,ahmed.chatterjee@demo-mail.net,199492380804
+dormant,7343124831,Luna,17/09/1978,+91 62710 29784,WBAPP3384K,Initech Systems,Liam Moore,geetabhatt@mail.example.org,791133312011
+closed,9565285012,Max,30 Mar 1956,+91 97193 57408,732387764809,Stark Fabrication,Geeta Malhotra,chloegarcia+promo@corp.example.in,517575103262
+dormant,6423057817,Bella,,+91 93276 61056,359271061376,Orbit Logistics Pvt Ltd,Anita Garcia,lakshmi.chatterjee@example.com,126518902468
+dormant,6894806921,Coco,1952-11-13,(+91)6064407786,GASPF6790K,Stark Fabrication,Lucas King,hagarwal@example.com,805241829720
+active,9807791280,Bruno,31 Dec 1952,06063991218,459490007759,Stark Fabrication,Fatima Bose,jpatel@demo-mail.net,294451692064
+closed,8074243594,Simba,1980-03-22,9501721667,FIZBQ2895D,Globex Industries,John Bhatt,lucas_chauhan@example.com,865102090729
+dormant,6587221192,Luna,7 Jul 1999,+91 91548 26196,373131209036,Northwind Traders,Aisha Patel,karendas@demo-mail.net,228646250050
+closed,8518706715,Bruno,30 May 1970,7851919741,9998 2501 1375,Stark Fabrication,Isha Johnson,jack_king@corp.example.in,468234613384
+closed,9534967321,Tommy,1985-06-19,68251-83428,8382-5353-7494,Stark Fabrication,Fatima Das,akhan+promo@example.com,722140022158
+active,8059833528,Max,8 Jul 1977,+91 81387 25706,QURCA9373A,Acme Supplies,Jennifer Garcia,arunghosh@example.com,700678675687
+active,7475564539,Simba,2004-08-09,08494699107,XMLPL4854N,Stark Fabrication,Manoj Garcia,gopalbhatia@mail.example.org,681656175006
+dormant,7286008391,Luna,,06255694501,6039 3409 6246,Tyrell Components,Anna Chatterjee,isha.lee@example.com,284856976831
+dormant,6313510495,Tommy,1952-05-02,8947146028,4634-5999-7575,Northwind Traders,Henry Hall,aditya.gupta@demo-mail.net,660333313199
+dormant,7094042875,Simba,1974-06-20,08595223814,3138 0139 4922,Orbit Logistics Pvt Ltd,Isabella Nair,adityamalhotra@example.com,757335771320
+active,8540349700,Coco,14 Mar 1969,08459963932,2885-2026-8651,Tyrell Components,Harish Moore,fatima.chauhan+bank@demo-mail.net,101588556647
+active,9884073357,Bruno,28 Jul 1991,9825900452,3519 1883 1672,Globex Industries,Aditya Joshi,kmishra@corp.example.in,388564867920
+dormant,8439040565,Coco,15/08/2006,(+91)6960655973,ZOWGG6025C,Hooli Networks,Kabir Malhotra,gauravkhanna@mail.example.org,892331905258
+dormant,7434925180,Bruno,,8818642478,6629 7273 7150,Stark Fabrication,Ganesh Pandey,chloe.lee+bank@example.com,381298783904
+closed,8471548860,Simba,17-10-1952,+91 63970 51114,KPRPN3250C,Acme Supplies,Chloe Anderson,jennifer_desai@example.com,472154575682
+dormant,7038492938,Max,18-01-2001,8224227629,AUMPK9170L,Orbit Logistics Pvt Ltd,Juan Joshi,manoj.king@mail.example.org,736650181219
+dormant,8021079360,Bella,12 Sep 1955,(+91)9765084489,5447-4158-8793,Globex Industries,Elizabeth Pandey,karen.bhatia@demo-mail.net,170049022442
+active,9676341517,Luna,11 May 1980,(+91)6000648375,NVQPW4743U,Initech Systems,Chloe Joshi,kunal.ansari@corp.example.in,922499113699
+dormant,6536669995,Simba,1952-12-05,+916917278213,475967888748,Wayne Distribution,Lakshmi Iyer,deepika.miller@example.com,295046149822
+dormant,7783313060,Max,06-07-1999,+91 85344 05298,3973 8866 2752,Acme Supplies,Hannah Chauhan,jennifer.agarwal@mail.example.org,220293515373
+closed,8768015854,Bella,4 Feb 2003,09885026687,6097-6831-0936,Orbit Logistics Pvt Ltd,Lily Khanna,lakshmi_iyer@corp.example.in,701205135523
+active,8863810174,Tommy,1960-02-29,79461-95479,656372219885,Northwind Traders,Arun Martin,karen.nair@example.com,650127464328
+closed,8444362872,Tommy,1989-03-22,+91 90121 16698,5977 9864 4554,Orbit Logistics Pvt Ltd,Kabir Ghosh,josephkhan@corp.example.in,186357062326
+dormant,6176041569,Max,25-05-1990,6546738942,6147 0324 1559,Acme Supplies,Gaurav Mishra,joseph.naidu@example.com,362533968202
+closed,7531324479,Coco,03-12-1997,83469-18043,397217200374,Hooli Networks,Ahmed Kumar,jack_garcia@example.com,645524394187
+dormant,7035036991,Simba,30 Nov 1948,72925-45336,664186005481,Orbit Logistics Pvt Ltd,Daniel Kapoor,adavis@mail.example.org,852463146533
+closed,9200025411,Rocky,,(+91)7578250347,3675-8619-9893,Globex Industries,Hannah Bhatt,adesai@corp.example.in,942898600839
+active,9288114490,Simba,15-10-1995,7419604062,5398 2272 3038,Acme Supplies,Ahmed Kapoor,daniel_naidu@example.com,442145438639
+active,7843426186,Luna,17 Apr 1957,+917169234902,4809-1524-2756,Hooli Networks,Ankit Das,carlos.khanna@demo-mail.net,210671316153
+dormant,6733644119,Luna,2 May 1959,+916704211896,FZMLK3515Y,Northwind Traders,Ankit Martin,kabir.pandey@example.com,537661210184

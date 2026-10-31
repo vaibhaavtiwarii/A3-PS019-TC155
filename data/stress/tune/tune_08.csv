@@ -1,0 +1,261 @@
+company_name,pet_name,invoice_no,contact_no,holder,status,birth_date,tmp_mail,aadhaar_no,order_number
+Tyrell Components,Max,INV-2026-45380,7736261094,,active,27 Mar 1958,aisha.patel+bank@mail.example.org,GKPPM3905G,7091181770
+Initech Systems,Simba,INV-2026-62394,(+91)8949533366,Anjali Chauhan,active,18 Aug 1966,jose_ansari@example.com,334401561081,7171795813
+Northwind Traders,Max,INV-2026-61837,9351003852,Kabir Joshi,closed,15 Jan 2006,jennifernair@corp.example.in,600622992976,9853292352
+Stark Fabrication,Bruno,INV-2026-39726,,Emma Mehta,dormant,17 Aug 1971,james.kumar@example.com,GDXGB0546L,9324868839
+Northwind Traders,Simba,INV-2026-70119,(+91)7035804476,Daniel Chauhan,active,16/05/2001,kavitamehta@corp.example.in,3184-4599-4974,7440738971
+Globex Industries,Simba,INV-2026-18420,8510137929,James Mishra,dormant,29 Sep 1966,karen.desai+promo@corp.example.in,KRQPL8411B,6139271189
+Orbit Logistics Pvt Ltd,Max,INV-2026-59671,78067-54607,Isha Brown,active,,gaurav.garcia@corp.example.in,2333-3564-3346,6695620714
+Initech Systems,Bella,INV-2026-98229,07942438432,Juan Das,dormant,10 Sep 2003,geetanaidu@mail.example.org,6456 8107 3488,6273582971
+Wayne Distribution,Bella,INV-2026-27658,06789254532,Jaya King,dormant,28 Aug 1965,jmoore@example.com,700711218640,7929387179
+Hooli Networks,Tommy,INV-2026-05592,,Manoj Naidu,closed,23-11-2001,jgarcia@example.com,XQIGX3261T,8465446869
+Northwind Traders,Simba,INV-2026-58336,(+91)9425552363,Liam Menon,dormant,08/03/1982,juaniyer@example.com,IIHBI5823C,7917605779
+Initech Systems,Rocky,INV-2026-60418,06524768162,Ankit Kumar,closed,1981-06-03,lakshmi_iyer@example.com,QUOTL2789Q,6679797014
+Initech Systems,Tommy,INV-2026-55727,9632687519,Jennifer Kulkarni,dormant,09/08/1986,amit.chauhan@corp.example.in,302912350369,6400037988
+Stark Fabrication,Max,INV-2026-09900,+91 73567 18923,Lakshmi Bhatt,active,,,6177-8977-4940,7007068981
+Acme Supplies,Luna,INV-2026-90383,(+91)8196593851,,active,1975-04-14,ganesh_jones@example.com,YZFTJ0228P,7628364204
+Northwind Traders,Tommy,INV-2026-07524,(+91)7833494837,Amit Anderson,closed,1999-05-05,jmoore@demo-mail.net,EMABP6965T,8406617048
+Acme Supplies,Coco,INV-2026-37863,(+91)9344279135,Aisha Banerjee,dormant,15-01-1986,kmartin@example.com,RBXCR2922U,8595740576
+Orbit Logistics Pvt Ltd,Bruno,INV-2026-58076,09006391571,Manoj Patel,dormant,10 Oct 1953,isabella.khanna@demo-mail.net,470813702350,6643035617
+Northwind Traders,Max,INV-2026-50703,09135367238,David Garcia,dormant,7 Feb 1967,jackmartin@corp.example.in,LICJQ2286O,6987802023
+Globex Industries,Luna,INV-2026-55182,+917580020363,Jose Bhatt,active,2002-03-02,grace.agarwal@corp.example.in,8413 7876 2228,7450885541
+Stark Fabrication,Bruno,INV-2026-35578,91154-42527,Isha Kumar,closed,,gmartin@corp.example.in,UBUTT6823E,6351818979
+Northwind Traders,Bella,INV-2026-73692,+919470400661,Anna Ghosh,closed,17/12/1978,diyer@example.com,369916258488,8259040516
+Northwind Traders,Rocky,INV-2026-31247,,Isha Agarwal,dormant,1 Jul 1962,leila_johnson72@corp.example.in,4597-4114-5568,9511097604
+Northwind Traders,Max,INV-2026-91698,07737980088,Kunal Anderson,dormant,2 Jul 1967,deepikanaidu@example.com,7850 6356 3427,9537680699
+Northwind Traders,Bruno,INV-2026-51080,6001419299,Fatima Iyer,closed,1979-03-10,lmiller@demo-mail.net,MWSGR7253O,9220481594
+Wayne Distribution,Bella,INV-2026-56191,,Charles Kumar,active,4 Nov 1998,charlespandey@demo-mail.net,2935 6708 9293,6960824689
+Tyrell Components,Max,INV-2026-82351,7413944048,Anita Davis,active,26-05-1967,divya_naidu@mail.example.org,8464 1078 1679,9352159624
+Stark Fabrication,Coco,INV-2026-94781,(+91)9800229285,Leila Gupta,closed,13/10/1995,lakshmi.iyer@mail.example.org,8414 3764 0621,6852848079
+Globex Industries,Luna,INV-2026-02029,60653-85537,Gaurav Garcia,closed,3 Dec 1979,amalhotra+bank@mail.example.org,YOYPR5015Y,9509980190
+Orbit Logistics Pvt Ltd,Max,INV-2026-88512,6195265806,Daniel Khanna,closed,23-02-1959,kkhan@corp.example.in,7402-9501-6995,8929395427
+Tyrell Components,Luna,INV-2026-06716,+91 92330 37700,,active,26/08/1958,jessicachauhan32@example.com,7256-6528-7676,8260799521
+Wayne Distribution,Simba,INV-2026-73863,09803602339,,active,12-09-1995,ankit.garcia@example.com,APNPA1923E,6876502431
+Initech Systems,Tommy,INV-2026-68211,09703549735,Henry Iyer,dormant,1983-02-24,hari.iyer62@demo-mail.net,2667 8710 5760,6818676979
+Northwind Traders,Coco,INV-2026-89914,7656640215,Anjali Agarwal,active,1966-03-08,chloekapoor@demo-mail.net,KZGCE3024M,7632679705
+Wayne Distribution,Tommy,INV-2026-20970,07384000806,Gopal Mishra,active,1976-10-09,charles.naidu@demo-mail.net,UUKPK8211O,6675607793
+Orbit Logistics Pvt Ltd,Tommy,INV-2026-92763,6253771365,Jennifer Bose,closed,,charles_khanna+promo@corp.example.in,5085 7739 6668,8462557622
+Tyrell Components,Rocky,INV-2026-88855,9356720241,Jose Mehta,closed,15-01-1973,harish_iyer@example.com,9421 9901 6063,6732444434
+Hooli Networks,Bruno,INV-2026-08516,+91 60068 64537,Lucas Moore,dormant,06-05-1991,fiona.lee@mail.example.org,4518 4521 8967,8995429238
+Stark Fabrication,Bruno,INV-2026-46784,+91 90110 20620,Aarav Bhatia,active,24 May 1971,kmalhotra@corp.example.in,248418702886,8025228738
+Hooli Networks,Tommy,INV-2026-15540,9066993535,Kiran Kapoor,dormant,2001-11-23,kunal_mishra@corp.example.in,889976355086,7923034523
+Initech Systems,Max,INV-2026-67991,8145710859,Isabella Bose,dormant,4 Oct 1986,hmoore@corp.example.in,JEELE8885M,9345634026
+Tyrell Components,Bella,INV-2026-60925,06863088484,Amit Patel,closed,02-04-1991,amitkhan@demo-mail.net,4038-4422-7842,7142793076
+Northwind Traders,Bruno,INV-2026-13505,+918224605942,Hari Das,dormant,17 Jan 1993,kavitaanderson+promo@corp.example.in,WXWGV5224F,7296986121
+Orbit Logistics Pvt Ltd,Rocky,INV-2026-35051,8964499428,Jennifer Gupta,closed,10-12-1963,,812968988430,8120522799
+Hooli Networks,Max,INV-2026-24851,9348011624,Anita Malhotra,active,1967-10-07,kirannair@mail.example.org,8722-7148-8744,7852217882
+Hooli Networks,Tommy,INV-2026-73152,+91 94613 55710,Anil Patel,closed,23-03-1957,djohnson@corp.example.in,4374 9774 5581,6775530314
+Orbit Logistics Pvt Ltd,Simba,INV-2026-04448,9779212483,Gaurav Davis,active,06/11/1993,fmalhotra@demo-mail.net,5830-5401-3536,9410299792
+Orbit Logistics Pvt Ltd,Luna,INV-2026-44722,+91 75812 82514,Hannah Garcia,active,1973-05-07,divya_moore24@example.com,4555 8505 2149,9446948477
+Acme Supplies,Max,INV-2026-01218,68079-68443,,dormant,2006-02-26,hkulkarni+promo@mail.example.org,660075984068,9362283199
+Globex Industries,Bruno,INV-2026-40499,(+91)8224588450,Fiona Iyer,active,11 Mar 2001,harishking@example.com,DYATD7408Z,7510390415
+Tyrell Components,Luna,INV-2026-05717,6082526401,Deepak Jain,dormant,11-04-1968,james_ghosh@mail.example.org,7961 9687 8972,6682897319
+Tyrell Components,Simba,INV-2026-78357,+91 94290 06015,Ganesh Patel,closed,1968-12-30,aditya_nair@demo-mail.net,2409-6939-3321,9425198416
+Stark Fabrication,Simba,INV-2026-12366,64384-25508,,dormant,17-04-1997,lily.pandey@mail.example.org,RDPHN4361U,9379165459
+Northwind Traders,Tommy,INV-2026-81839,+919550950549,Karen Nair,active,30-12-1956,ganesh.martin@example.com,595737783989,7345379073
+Globex Industries,Luna,INV-2026-85113,(+91)8778960683,Jack Johnson,closed,07-08-1959,jbhatt@mail.example.org,EQRTX5738I,8342143582
+Stark Fabrication,Simba,INV-2026-50222,+91 69268 08836,Deepika Malhotra,closed,08/07/1956,,JKEGF2605P,9221856497
+Northwind Traders,Rocky,INV-2026-39264,9436737454,Ethan Pandey,closed,,aishagarcia@corp.example.in,5048 3967 8968,9937558593
+Stark Fabrication,Rocky,INV-2026-30416,(+91)7119365754,Charles Agarwal,closed,1949-09-05,,CFBGY3993S,7520706996
+Northwind Traders,Simba,INV-2026-51788,(+91)8907315319,Elizabeth Brown,active,1983-02-16,ggarcia@corp.example.in,XQTFS2908F,7911609988
+Orbit Logistics Pvt Ltd,Bruno,INV-2026-87360,+91 76023 93673,Lily Brown,closed,24 Oct 1963,carlos.menon@mail.example.org,6685 9454 7253,6652039253
+Wayne Distribution,Simba,INV-2026-43855,07976209085,Joseph Kapoor,dormant,09/08/1971,amitmoore@mail.example.org,6700 0524 6236,9013906062
+Globex Industries,Bella,INV-2026-90813,7003473563,Jose Banerjee,closed,9 Nov 1954,james.mishra@corp.example.in,387637120625,7511126340
+Orbit Logistics Pvt Ltd,Rocky,INV-2026-67569,(+91)8099990939,Kavita Davis,dormant,1998-10-24,lily.bose80@demo-mail.net,961017431403,6939353849
+Orbit Logistics Pvt Ltd,Bella,INV-2026-90731,+91 93973 43326,Emma Hall,closed,1980-11-11,emma.das@demo-mail.net,KVHPD5476Q,9954833542
+Northwind Traders,Bella,INV-2026-42677,+91 77987 07492,Deepika Nair,dormant,14-08-1949,ishachauhan@mail.example.org,UPQHC3873V,6142702412
+Stark Fabrication,Luna,INV-2026-57518,+919243995894,,dormant,,ajain+bank@example.com,377851681164,8942210870
+Orbit Logistics Pvt Ltd,Max,INV-2026-96360,+916619942526,Lily Khan,dormant,28-10-1970,charlesbrown@demo-mail.net,480046902616,8311379292
+Acme Supplies,Bruno,INV-2026-54627,9562995959,Charles Jones,dormant,7 May 1978,daniel_patel@example.com,628039903968,8672890908
+Globex Industries,Rocky,INV-2026-61778,6191014553,Elena Kumar,active,1980-04-24,gaurav.das@example.com,266981341844,7050550432
+Initech Systems,Coco,INV-2026-75236,+916320713660,Gaurav Bose,dormant,10/11/1999,anilgarcia@example.com,2684 6090 5591,6262253268
+Stark Fabrication,Bella,INV-2026-31115,+918666808381,Karen Naidu,closed,29/01/1964,jayahall@mail.example.org,531559289889,7513853339
+Stark Fabrication,Tommy,INV-2026-18095,+916157833234,Jessica Banerjee,active,25-02-1971,lkhanna+bank@mail.example.org,210650567043,9842194674
+Globex Industries,Luna,INV-2026-47743,+916115179819,Aditya Jain,closed,11/08/2006,lucas_agarwal+promo@demo-mail.net,339568046373,7668805556
+Hooli Networks,Tommy,INV-2026-21235,(+91)6016596211,Jack Davis,dormant,30 Dec 1962,ahmed.mehta76@demo-mail.net,FFTJT4748K,6524179997
+Hooli Networks,Bella,INV-2026-67676,87808-01681,Amit Agarwal,closed,2007-08-25,kchatterjee@mail.example.org,8973 1086 3919,7574715249
+Globex Industries,Tommy,INV-2026-06915,(+91)7885208483,Linda Hall,dormant,11-06-1984,arjun_chauhan@corp.example.in,687871425096,9104007201
+Wayne Distribution,Simba,INV-2026-19930,9029770729,Asha Anderson,active,08-01-2007,arun.martin+promo@mail.example.org,817851276458,9482926889
+Wayne Distribution,Bella,INV-2026-90708,+917403542341,Geeta Joshi,closed,22-06-1951,hkulkarni@corp.example.in,QGHCU7020W,9755753660
+Wayne Distribution,Simba,INV-2026-29986,9949010639,Kunal Khanna,dormant,03-05-1952,johnnair@example.com,7997-3666-5085,8573173941
+Orbit Logistics Pvt Ltd,Luna,INV-2026-03149,9511983108,,closed,06-02-1957,lansari@example.com,2229 1702 5865,8110766115
+Tyrell Components,Luna,INV-2026-34133,8879957790,Liam Moore,closed,06-03-1998,kiranmiller@mail.example.org,923597559146,9286807413
+Orbit Logistics Pvt Ltd,Bella,INV-2026-90300,81069-43243,Aditya Jain,active,1958-02-14,fatima.chauhan@mail.example.org,6502-6424-7959,7389833206
+Wayne Distribution,Rocky,INV-2026-57401,+917552259505,Isha Jain,dormant,5 Apr 1961,,8623-2889-0489,6817374049
+Northwind Traders,Bella,INV-2026-91851,,Aditya Ghosh,active,08-08-2000,,LPOCV3260H,9404511227
+Stark Fabrication,Tommy,INV-2026-63221,75429-81184,Ethan King,closed,20-02-1998,cbrown@mail.example.org,5084 9691 4939,8232225773
+Northwind Traders,Bella,INV-2026-85621,(+91)9324838353,Daniel Kapoor,dormant,22 Oct 1969,,7310-7149-6800,7766159071
+Acme Supplies,Tommy,INV-2026-60013,6826051293,Anna Miller,closed,2004-07-29,henry.garcia+bank@mail.example.org,953397120408,6753973421
+Acme Supplies,Coco,INV-2026-69671,95568-01353,Daniel Chauhan,dormant,1962-08-26,jjones@mail.example.org,633384170395,7065797778
+Acme Supplies,Max,INV-2026-09465,79665-31925,Ethan Naidu,closed,01-02-1959,juan_bhatia+promo@demo-mail.net,720859579095,9271655119
+Acme Supplies,Max,INV-2026-59839,87747-82638,James King,active,11-03-1991,jessicachatterjee@corp.example.in,FVMFA4665A,8981174613
+Hooli Networks,Simba,INV-2026-66515,7941668944,Arjun Das,closed,02/12/1948,arjunjones@mail.example.org,NZNPN3455N,8480444446
+Hooli Networks,Luna,INV-2026-87366,08275126701,Jack Agarwal,closed,27-08-1960,amitdesai+promo@demo-mail.net,9484 3223 6839,6138889975
+Stark Fabrication,Rocky,INV-2026-79655,(+91)6152672601,James King,active,16-08-1959,anita.king@demo-mail.net,317892971924,6289998422
+Northwind Traders,Luna,INV-2026-88667,83839-32529,Fiona Mehta,active,2004-01-28,jkhan@example.com,8750-7641-1271,6510175354
+Tyrell Components,Luna,INV-2026-46859,(+91)6869729960,Jose Menon,dormant,14/01/1994,fatima_menon@example.com,7534-1388-3471,7203102684
+Wayne Distribution,Simba,INV-2026-49474,+91 74302 79568,Aditya Banerjee,active,19-11-1998,abhatia@corp.example.in,6995 3015 2097,9723995834
+Tyrell Components,Luna,INV-2026-28723,7745583872,Liam Kapoor,dormant,29 May 1969,annaansari@demo-mail.net,7176-1050-2820,8739294623
+Stark Fabrication,Bella,INV-2026-36919,60384-37477,Kiran Hall,dormant,16 Feb 1984,,3995 9997 2672,6521548014
+Stark Fabrication,Coco,INV-2026-43885,87743-07620,Kabir Chauhan,dormant,1997-10-02,liam_johnson@corp.example.in,275233989410,9010156953
+Tyrell Components,Luna,INV-2026-18551,+91 86553 31266,Henry Garcia,closed,,ganeshiyer@corp.example.in,LLAAF8916S,9354771723
+Wayne Distribution,Luna,INV-2026-83505,67983-33757,Hannah Chatterjee,dormant,1965-08-24,emma_davis@mail.example.org,QCMGP0857P,6671126069
+Globex Industries,Bruno,INV-2026-71620,+919409373419,Hannah Joshi,dormant,18/12/1999,jackdavis+promo@corp.example.in,ERZPM9550J,9053209408
+Initech Systems,Coco,INV-2026-24109,07660279671,David Moore,closed,25 Aug 1953,hannah.garcia@mail.example.org,568594042088,6233485670
+Initech Systems,Rocky,INV-2026-73315,06344754900,Chloe Pandey,active,4 Apr 1974,gracejain@corp.example.in,XPSFZ5706T,7716670495
+Northwind Traders,Coco,INV-2026-94689,9360557284,John Lee,dormant,28-07-1970,gopal.mehta@mail.example.org,ANYPV3004T,7738424723
+Stark Fabrication,Luna,INV-2026-88674,+918756751899,Gaurav Jain,active,23/12/1981,geeta_brown@example.com,VUOPG6289R,7827417845
+Stark Fabrication,Max,INV-2026-79217,+918568127386,Krishna Patel,closed,30/11/1978,ebhatt@mail.example.org,SVMPJ6107M,9377249232
+Acme Supplies,Max,INV-2026-78312,,Manoj King,closed,1990-12-19,ckumar64@example.com,698822208809,8568718362
+Wayne Distribution,Simba,INV-2026-42085,(+91)9011226587,Isha Ghosh,active,23-04-1976,ethan_lee@demo-mail.net,447872577199,8479697311
+Stark Fabrication,Max,INV-2026-47199,09515998728,Anna Kulkarni,active,24-07-1996,apatel+promo@mail.example.org,7847 4873 0949,8068130743
+Initech Systems,Bruno,INV-2026-04306,8875939415,Kunal Chatterjee,dormant,,liam_anderson@corp.example.in,7083-1910-7407,7866156071
+Acme Supplies,Max,INV-2026-24663,74654-32194,Jack Banerjee,active,29-11-1955,cmehta@corp.example.in,ZROFF8076T,6901013902
+Initech Systems,Coco,INV-2026-91675,+917333842050,,active,2000-05-19,krishnamishra@corp.example.in,AIWTN0283S,6572282834
+Northwind Traders,Max,INV-2026-78957,06487035001,Ethan King,closed,29/11/2006,james_banerjee@example.com,6541-1863-6930,9786323966
+Acme Supplies,Rocky,INV-2026-37949,9098297999,Lily Naidu,closed,21-09-1955,,NJRPO5589P,7174416251
+Tyrell Components,Bruno,INV-2026-01201,(+91)7083748749,Ahmed Desai,active,08/08/1956,krishnamehta@demo-mail.net,2753 9464 4906,8157056091
+Stark Fabrication,Max,INV-2026-55823,+916337921314,Divya Nair,closed,12 Nov 1991,davidgarcia13@corp.example.in,MJJFD9336I,8385845976
+Acme Supplies,Max,INV-2026-66762,(+91)9492354228,Leila Johnson,active,18-02-1984,gaurav_ansari@example.com,3630-5293-5719,7689167793
+Northwind Traders,Luna,INV-2026-10713,09727417419,Leila Khan,closed,25/05/1998,gaurav_miller@mail.example.org,5796 1043 6389,8904220210
+Wayne Distribution,Bruno,INV-2026-05233,+91 89043 34459,Anna Gupta,closed,27/02/1951,charles_brown@example.com,9887-8278-8952,6821260562
+Initech Systems,Rocky,INV-2026-05327,7428568654,Anita Ansari,closed,26 Jan 1978,deepak.moore@corp.example.in,7614 9185 6399,6669644763
+Globex Industries,Bella,INV-2026-13220,,,closed,2006-03-26,gmartin@mail.example.org,JUGPI7570F,9424728099
+Hooli Networks,Max,INV-2026-87055,+919962925643,Gaurav Lee,closed,3 May 1999,mkapoor@mail.example.org,TXEHT2435U,8880980423
+Tyrell Components,Bruno,INV-2026-33423,(+91)6283650871,Aisha Joshi,active,,jjohnson@demo-mail.net,DKFPB9454P,9514837866
+Wayne Distribution,Max,INV-2026-38229,+91 75505 60653,Ahmed Das,closed,30-04-1994,gracepandey@example.com,GSCFQ1581V,9557164534
+Tyrell Components,Max,INV-2026-97884,+91 91620 16980,Anil Das,closed,,aditya.davis@demo-mail.net,2161-3039-9229,6856962731
+Globex Industries,Max,INV-2026-52027,+916201046130,Grace Joshi,dormant,,jennifer_nair@example.com,FPDPF5358G,6528043720
+Initech Systems,Tommy,INV-2026-37878,+918236622239,Elizabeth Patel,closed,13-04-1986,johnansari@mail.example.org,5448-3643-5251,9954044294
+Hooli Networks,Tommy,INV-2026-24110,(+91)8693486953,,dormant,12 Feb 1958,elenapandey@example.com,NVCFN6264Q,9945691301
+Initech Systems,Luna,INV-2026-20540,+917158412211,Aditya Moore,closed,05/05/1993,lhall@example.com,UBUTJ7758U,9632000820
+Acme Supplies,Coco,INV-2026-55243,7186885002,Carlos Hall,dormant,27/02/2001,isabella_pandey@corp.example.in,595353842572,9367667293
+Tyrell Components,Coco,INV-2026-33886,96149-32965,Arun Naidu,active,25 Jan 1964,ejones@mail.example.org,5985-6122-1735,7440226294
+Initech Systems,Simba,INV-2026-97767,+91 88727 16130,David Brown,closed,5 Apr 1953,isha_king@mail.example.org,8990-5456-8965,6263816390
+Acme Supplies,Bella,INV-2026-09133,+918739333147,John Kapoor,active,08/03/2000,isabellamehta@demo-mail.net,975913433418,9278560106
+Orbit Logistics Pvt Ltd,Max,INV-2026-69209,8753699587,Gaurav Garcia,active,2001-02-17,arjun.kapoor@mail.example.org,HXVAE8244Z,7800488191
+Tyrell Components,Bruno,INV-2026-14227,09215623419,Aditya Malhotra,closed,30-01-2000,ethanjain@demo-mail.net,7234 5151 3253,8874982715
+Globex Industries,Coco,INV-2026-80352,74305-21595,Hannah Chatterjee,active,1 Dec 1993,anjali.mehta@mail.example.org,5151-9177-4357,7194549883
+Northwind Traders,Rocky,INV-2026-32436,9344862594,,dormant,15 Aug 1983,ddavis+bank@corp.example.in,3482 6344 6678,6466927519
+Northwind Traders,Simba,INV-2026-16775,09745469037,Leila Moore,closed,,harish_gupta@demo-mail.net,499523678022,6227953542
+Acme Supplies,Luna,INV-2026-91197,+91 90782 65280,Jack Chauhan,closed,27 Feb 1978,adavis@corp.example.in,467458556166,7548457341
+Orbit Logistics Pvt Ltd,Rocky,INV-2026-91739,07230899402,Harish Patel,dormant,1983-09-16,,250937292237,6554858466
+Stark Fabrication,Max,INV-2026-57603,+917146932980,Henry King,closed,28 Feb 1988,chloechauhan+bank@example.com,4586-0114-7392,6730993031
+Globex Industries,Coco,INV-2026-58763,9454449679,Deepak Ghosh,active,,isabellamiller@mail.example.org,FANPL3212C,6937398433
+Initech Systems,Coco,INV-2026-56072,6207904977,Juan Chatterjee,closed,2005-09-26,enaidu@example.com,SXEPA3596H,6700700791
+Acme Supplies,Coco,INV-2026-41180,8960123911,Jessica Martin,dormant,1975-04-26,amit_menon+promo@example.com,MZMTB1356U,7211130567
+Orbit Logistics Pvt Ltd,Luna,INV-2026-40638,6972822936,,active,14 Apr 1980,aisha_miller@demo-mail.net,3810 8796 3206,7529363724
+Northwind Traders,Rocky,INV-2026-81337,+91 85129 54156,Aarav Khan,closed,21/12/1994,deepikaansari@mail.example.org,770051682731,9410597080
+Initech Systems,Tommy,INV-2026-85436,99441-31720,Jose Brown,active,13/01/1984,dbhatia@example.com,APZPS2464R,9706653837
+Hooli Networks,Simba,INV-2026-04909,+917027177752,Liam Anderson,dormant,2003-04-19,grace.naidu+bank@corp.example.in,BYNJV1792N,9169435426
+Wayne Distribution,Coco,INV-2026-17823,+91 86626 60732,Grace Menon,active,,gaurav.naidu+promo@demo-mail.net,TJRPP0765P,9337779698
+Orbit Logistics Pvt Ltd,Rocky,INV-2026-33687,(+91)6484063003,Liam Menon,active,2005-11-18,,2696-1975-1950,7188614731
+Globex Industries,Bella,INV-2026-27239,85724-10641,Anna Kulkarni,closed,19 Oct 1985,arjun.brown@mail.example.org,677859562598,9506624777
+Northwind Traders,Tommy,INV-2026-24696,7022904714,Anil Chauhan,active,1964-02-08,amiller+promo@example.com,8645-6080-0697,7050047431
+Globex Industries,Tommy,INV-2026-50959,(+91)9109928701,,active,08/04/1966,krishna.pandey@example.com,GINPU8044D,9628636761
+Northwind Traders,Rocky,INV-2026-36055,08731340523,Asha Khanna,closed,02-06-1987,juan_chauhan@demo-mail.net,YFVHF7457T,6717717392
+Initech Systems,Luna,INV-2026-14686,98430-28783,Gaurav Garcia,dormant,,aanderson@demo-mail.net,9404 3669 3526,8602896952
+Acme Supplies,Bruno,INV-2026-34499,+91 73081 23891,Kavita Mehta,dormant,30-03-1983,grace.jain@example.com,400455324977,6280930700
+Stark Fabrication,Coco,INV-2026-23211,63116-20105,John Chauhan,closed,20-03-1953,henry.moore@corp.example.in,3271 1236 9879,8955575916
+Northwind Traders,Rocky,INV-2026-20369,+917812129147,Elena Pandey,active,1986-03-11,jpatel@example.com,6943 0274 5212,9218304530
+Acme Supplies,Rocky,INV-2026-27586,9250416445,,active,27-07-1996,fatimahall@example.com,626507292502,8109922605
+Initech Systems,Tommy,INV-2026-03909,,Anjali Nair,closed,12-07-1987,ddas@corp.example.in,RZVCW0778F,8433648197
+Globex Industries,Simba,INV-2026-79304,6197705813,Charles Nair,dormant,04-02-2007,ashachatterjee@demo-mail.net,4350 8869 0128,7983767700
+Initech Systems,Coco,INV-2026-35262,84536-76596,,dormant,1972-04-17,,EFOPS4479T,7747798364
+Tyrell Components,Tommy,INV-2026-31350,61620-52561,Gaurav Patel,dormant,18 Dec 1956,ankitmishra95@example.com,8866 8517 4039,6235298288
+Globex Industries,Max,INV-2026-61771,+91 81301 45204,Anna Bhatt,active,,chloe.bhatt@mail.example.org,2234 7534 2389,9113830202
+Initech Systems,Bella,INV-2026-84464,96785-68965,,active,25-12-1968,chloe_menon@demo-mail.net,4317 7470 0499,8898669693
+Acme Supplies,Max,INV-2026-17970,(+91)7636270502,Elizabeth Menon,active,7 May 1992,anil_pandey@corp.example.in,229485258274,8120167634
+Orbit Logistics Pvt Ltd,Simba,INV-2026-05728,9030009213,Gaurav Davis,closed,21 Jan 1996,gopal_iyer@demo-mail.net,343056827828,6411433236
+Initech Systems,Rocky,INV-2026-97381,08985328639,Manoj Hall,active,05/07/1979,achatterjee62@corp.example.in,TCIHS9003B,7353744291
+Hooli Networks,Max,INV-2026-52278,6095869833,Juan Ghosh,closed,1959-11-19,kagarwal37@example.com,419243901180,9662171572
+Tyrell Components,Luna,INV-2026-01558,84932-93130,Asha Jain,closed,30/11/1960,elizabeth_hall@corp.example.in,7762 1816 9138,6505162662
+Initech Systems,Coco,INV-2026-40305,6219741393,Kiran Garcia,dormant,16 Jan 1950,,9479-4910-7923,6542815132
+Wayne Distribution,Tommy,INV-2026-07308,09559124628,Leila Ansari,active,08/02/1958,fatimabhatia+bank@corp.example.in,3013-9287-1796,9151857154
+Wayne Distribution,Tommy,INV-2026-14564,7619390998,John Desai,closed,08/03/1951,,384725492766,8812669343
+Globex Industries,Coco,INV-2026-70503,+91 61898 82593,Chloe Kumar,dormant,5 Jun 1950,lilychatterjee78@mail.example.org,244690388268,7847633786
+Initech Systems,Simba,INV-2026-70538,+917021752369,Anil Malhotra,active,27/06/1994,ggarcia@demo-mail.net,4140 8198 0536,8941180981
+Initech Systems,Bella,INV-2026-56952,+916029140674,,active,10/01/2006,jdas@demo-mail.net,7543 4224 4949,7805438213
+Wayne Distribution,Tommy,INV-2026-58691,,Krishna Banerjee,closed,09-09-1954,krishna.jones@example.com,YZNAJ5296O,6675295023
+Acme Supplies,Tommy,INV-2026-00260,+91 64153 36537,Ethan Joshi,active,1949-11-15,daniel_lee@mail.example.org,7968 3805 7774,8942783177
+Stark Fabrication,Bruno,INV-2026-17126,+919557858963,Jessica Malhotra,dormant,18/11/1973,krishnabhatia@mail.example.org,460399825857,9523574438
+Globex Industries,Luna,INV-2026-05436,91479-64966,Amit Desai,dormant,2005-08-31,dagarwal@demo-mail.net,3645 1027 0576,9399219448
+Acme Supplies,Tommy,INV-2026-00039,,Arun Kumar,closed,,kdavis@corp.example.in,RUNGM7634I,8636695835
+Initech Systems,Rocky,INV-2026-11800,+919684652614,Gaurav Moore,closed,1974-08-10,karen.moore@corp.example.in,352326076951,6813767914
+Northwind Traders,Luna,INV-2026-75744,9754878064,Liam Anderson,dormant,1969-01-01,amitking@corp.example.in,5259-9811-3196,8164471944
+Orbit Logistics Pvt Ltd,Simba,INV-2026-11315,,Anjali Kulkarni,active,1992-06-30,isabella.desai@mail.example.org,606971479414,8769491669
+Hooli Networks,Tommy,INV-2026-42246,+919722388798,,dormant,25 Mar 2007,kbanerjee@example.com,MFKJL9529A,9037257466
+Initech Systems,Coco,INV-2026-04127,8686863449,Elena Iyer,dormant,1961-06-16,harishmishra@mail.example.org,9812 7431 6390,6224769814
+Northwind Traders,Bella,INV-2026-97576,62560-94768,Anil Chatterjee,closed,14-05-2007,lakshmi.kumar@mail.example.org,7557-8771-1882,7957747761
+Stark Fabrication,Simba,INV-2026-17003,(+91)6667083755,,active,16 Mar 2007,elena.bhatia@demo-mail.net,743861387990,7372202169
+Stark Fabrication,Bruno,INV-2026-59114,+917160699477,Emma Miller,closed,25/04/1975,abhatia@example.com,7987-7631-3703,9251231547
+Northwind Traders,Simba,INV-2026-46626,+916185144800,Kabir Jain,active,1 Nov 1983,ahmed_menon+promo@example.com,7110-4676-7373,9318711751
+Orbit Logistics Pvt Ltd,Coco,INV-2026-34752,6502217077,Elizabeth Kulkarni,closed,,ldavis@corp.example.in,9601-9115-0656,6381444706
+Hooli Networks,Luna,INV-2026-20176,9023433334,Lily Kapoor,active,2 Oct 1991,geeta.mehta@example.com,9759-9010-7076,7547654787
+Wayne Distribution,Simba,INV-2026-02104,08803161829,,closed,9 Jan 1953,anna.ansari3@example.com,8940-1991-4866,7579062032
+Tyrell Components,Rocky,INV-2026-22999,06275193026,Jack Pandey,dormant,1998-05-25,aaravjain@mail.example.org,SUWPV4882C,9689013853
+Hooli Networks,Max,INV-2026-82424,,Karen Anderson,active,17/06/1978,gmenon+bank@example.com,5659 7590 2612,8213121770
+Tyrell Components,Coco,INV-2026-59015,99760-19427,Lily Kumar,closed,1999-09-05,anil.patel@demo-mail.net,4915 3431 2659,7938854532
+Orbit Logistics Pvt Ltd,Simba,INV-2026-41322,7456493588,,closed,1966-01-17,lucas.davis+bank@demo-mail.net,6097-7722-7282,8216517575
+Stark Fabrication,Simba,INV-2026-57209,72264-22450,Ankit Bose,dormant,02/02/1959,ahmedmartin@example.com,7090-8012-2411,7717020267
+Globex Industries,Simba,INV-2026-93159,+917747388701,Divya Bose,dormant,31/07/1979,,KTHPR1529K,7713966151
+Globex Industries,Max,INV-2026-84484,8701659930,,dormant,,kpatel@mail.example.org,OPYBV0859Y,9892731502
+Globex Industries,Rocky,INV-2026-48127,,Lily Banerjee,active,1959-04-30,josephbanerjee@corp.example.in,6662 0150 2875,8500322544
+Hooli Networks,Rocky,INV-2026-34629,84508-82967,,dormant,14 Aug 1983,asha_agarwal87@demo-mail.net,9052-3903-4519,6775535891
+Acme Supplies,Simba,INV-2026-18956,,Henry Menon,active,11 Dec 2004,,2284-5973-8502,6824983961
+Stark Fabrication,Rocky,INV-2026-02645,9769496938,Aarav Bose,dormant,07-01-1977,,RQNFI1960A,7548155007
+Wayne Distribution,Bella,INV-2026-99539,+917732251134,Manoj Miller,active,1987-03-09,anil_lee+bank@example.com,5391-6008-5688,7134948305
+Initech Systems,Max,INV-2026-60326,6151697057,,closed,20/06/1971,lmoore@mail.example.org,3672-2717-2967,6074820902
+Tyrell Components,Max,INV-2026-16827,(+91)9044097385,,active,29-01-1963,divya.bhatia+bank@corp.example.in,535796867548,6114230371
+Stark Fabrication,Rocky,INV-2026-39334,+91 83304 11899,Fatima Kumar,closed,1969-07-14,jessicakhanna@demo-mail.net,EBPPY9893T,9255990189
+Hooli Networks,Bruno,INV-2026-52641,06043472353,Amit Menon,active,,deepakbose@demo-mail.net,344611947493,6107074235
+Tyrell Components,Simba,INV-2026-40556,9411300176,Juan Kulkarni,active,25/09/1958,kmoore@mail.example.org,5553-2648-3238,8119623872
+Wayne Distribution,Rocky,INV-2026-90875,,Emma Iyer,active,1977-03-14,jessicanaidu@mail.example.org,4217 3342 3683,8626510405
+Acme Supplies,Rocky,INV-2026-77142,,Anil Bose,closed,22/10/1971,ganesh_joshi@example.com,226232241180,7861753825
+Orbit Logistics Pvt Ltd,Tommy,INV-2026-97354,07163540980,Ahmed Kumar,closed,26 Apr 1975,arun.moore@corp.example.in,CAJPU7445W,8258712153
+Globex Industries,Coco,INV-2026-95994,8624269730,Liam Bhatt,active,21-06-2002,cjoshi+promo@corp.example.in,548484196123,8757181969
+Initech Systems,Tommy,INV-2026-43399,+91 78422 07216,Geeta Agarwal,active,,kabir_khan@example.com,DEXPO0159B,7766551560
+Northwind Traders,Coco,INV-2026-63608,80700-24777,Kiran Chatterjee,active,,,FRWLU3707V,9446258029
+Northwind Traders,Tommy,INV-2026-99920,(+91)7588906919,,dormant,17/05/1984,davidansari@corp.example.in,941144717064,8728875233
+Wayne Distribution,Tommy,INV-2026-19865,+919257717911,Divya Bhatia,dormant,1977-04-17,,231535859008,9608010316
+Northwind Traders,Rocky,INV-2026-30867,,,dormant,24-08-1971,elizabeth_chatterjee@corp.example.in,5498 2046 7296,8187180590
+Wayne Distribution,Rocky,INV-2026-77013,+91 74027 92867,,closed,02/05/1991,jessica_hall20@example.com,622103200784,8619363480
+Orbit Logistics Pvt Ltd,Bruno,INV-2026-21327,+918691117081,,dormant,17 Aug 1976,alee@corp.example.in,9592 2118 3670,7756519630
+Wayne Distribution,Tommy,INV-2026-90521,(+91)7912072963,Jaya Kulkarni,closed,27-12-1989,linda.anderson56@example.com,OBPPJ7766T,8195737779
+Orbit Logistics Pvt Ltd,Simba,INV-2026-85323,(+91)8192765566,Leila Khan,dormant,8 Oct 1985,ankit_agarwal@corp.example.in,WWMCM4594F,8741724132
+Tyrell Components,Simba,INV-2026-69703,07915881194,Jessica Das,closed,24/08/1993,john_pandey@example.com,IIYPE8348X,9996255467
+Wayne Distribution,Max,INV-2026-18739,09570784968,Deepak Brown,dormant,,lpatel@corp.example.in,XACPA2194Q,7623300294
+Tyrell Components,Tommy,INV-2026-42964,(+91)9909420054,Krishna Chatterjee,active,16-03-1972,lily.davis@demo-mail.net,8709 8655 9455,7431811181
+Tyrell Components,Simba,INV-2026-34055,+91 83049 29909,Asha Naidu,closed,18/08/1974,isabellaghosh@mail.example.org,WPAFY8191R,6767337136
+Wayne Distribution,Coco,INV-2026-02070,,Arjun Bhatt,active,15-09-1982,carlosjain@mail.example.org,817879034158,6719058924
+Tyrell Components,Luna,INV-2026-10550,+91 91169 83046,Jennifer Moore,dormant,1980-01-14,cdesai@example.com,386130253653,9233053221
+Acme Supplies,Tommy,INV-2026-49962,7492745948,,active,21-04-1959,kmalhotra@example.com,USQHZ2288R,9532617063
+Stark Fabrication,Rocky,INV-2026-41813,+919889952468,Jose Bhatt,active,09-07-1972,karen_jones+bank@corp.example.in,WBMLH4763Y,6620376597
+Wayne Distribution,Bella,INV-2026-59876,8881906463,Jessica Menon,closed,8 May 1979,anaidu@corp.example.in,7454 5626 8197,8831744856
+Globex Industries,Bella,INV-2026-67999,,Joseph Khan,dormant,2006-09-23,haribhatia@demo-mail.net,NRWPE9709A,7528090992
+Northwind Traders,Bella,INV-2026-58099,8891796052,Deepak Khanna,active,15/07/2007,kiran.menon@demo-mail.net,8867-0794-3346,8669101363
+Orbit Logistics Pvt Ltd,Max,INV-2026-47002,+919818073984,Manoj Menon,active,19-03-2006,,RMSPH3157M,8539333331
+Wayne Distribution,Coco,INV-2026-93222,(+91)9191556093,Jennifer Johnson,dormant,23-11-1960,,854922069425,8320199249
+Initech Systems,Luna,INV-2026-67479,+918000747737,Gopal Mishra,dormant,,geeta_bose+promo@example.com,KIKFZ8649I,9601511684
+Hooli Networks,Coco,INV-2026-64076,+919949668091,Jessica Bhatt,dormant,29-05-1970,jessica.hall@demo-mail.net,785254858795,6744389281
+Northwind Traders,Simba,INV-2026-30794,8293238307,Aisha Iyer,closed,15 Sep 1973,jpandey@corp.example.in,4462-9570-6534,9767158151
+Stark Fabrication,Max,INV-2026-17779,+91 63366 10363,Manoj Naidu,closed,16 May 1959,anjaliansari@example.com,2360-8125-1666,6781230760
+Hooli Networks,Bella,INV-2026-35336,8341766409,Jennifer Chatterjee,closed,19 Jan 1950,anna.moore@corp.example.in,VQTJC5492C,6828220357
+Globex Industries,Simba,INV-2026-96162,61470-61290,Hari Ansari,dormant,03/01/1975,joseph_ansari@demo-mail.net,UTOPJ0634A,6486436575
+Acme Supplies,Simba,INV-2026-98374,6438742852,Amit Davis,dormant,01/12/1993,,2255 9196 5072,6136123431
+Acme Supplies,Simba,INV-2026-34924,+916500956233,Grace Miller,active,1981-09-20,kjones32@demo-mail.net,8476 7832 1978,7026243930
+Stark Fabrication,Bruno,INV-2026-50227,07408706298,Leila Gupta,active,1985-02-27,kdavis@corp.example.in,3894-6374-5393,9842498541
+Globex Industries,Simba,INV-2026-54224,06815289632,Ahmed Ansari,active,01-09-1994,,673207896902,8026144643
+Tyrell Components,Simba,INV-2026-55234,8178494454,,dormant,14 Feb 1999,anna_agarwal@demo-mail.net,3896-1348-0662,9366053156
+Initech Systems,Bella,INV-2026-83856,06461580244,Manoj Das,closed,26/06/2002,elizabeth.brown@mail.example.org,2320 6957 2177,8158579685
+Globex Industries,Coco,INV-2026-00592,(+91)7079792503,Kavita Joshi,active,07/12/1967,hdesai@demo-mail.net,DSOFV8340R,6983186470
+Acme Supplies,Simba,INV-2026-75014,(+91)9385884688,Jaya Khanna,closed,,anita_kumar@demo-mail.net,3924 9815 2085,8914840804
+Tyrell Components,Simba,INV-2026-22858,+91 82876 65659,Amit Johnson,active,20 Apr 1972,adesai@corp.example.in,8853 5807 8216,6802968131
+Stark Fabrication,Coco,INV-2026-08478,8069276071,Deepika Kulkarni,closed,29 Nov 1948,gchatterjee@example.com,GPAHT6342N,7615998797
+Stark Fabrication,Coco,INV-2026-09952,+91 82536 51185,John Khan,dormant,1 Jan 2007,,XXHBI0706F,8675205582
+Orbit Logistics Pvt Ltd,Luna,INV-2026-55016,+918089515831,Emma Ghosh,dormant,,davidbanerjee@corp.example.in,LPHJA5421X,9492063552
+Hooli Networks,Bruno,INV-2026-80162,+91 67376 35924,,closed,04/10/1973,aniljoshi@example.com,EDSPQ9968U,6864628956
+Northwind Traders,Tommy,INV-2026-33167,7371177599,Aisha Kulkarni,active,13/06/1953,aishachauhan3@demo-mail.net,OTKPQ8137C,7847217950
+Orbit Logistics Pvt Ltd,Tommy,INV-2026-52139,8487297915,Elena Joshi,active,16/10/1949,kmehta@demo-mail.net,FOGPD2542R,7181972161
+Tyrell Components,Bella,INV-2026-76216,,,active,1970-08-22,jose.nair@demo-mail.net,816955047641,6046680040
+Acme Supplies,Luna,INV-2026-85513,+91 67308 69796,Fatima Bose,dormant,14 Jul 1963,arjun.jain@corp.example.in,8093-8956-4673,9703140607

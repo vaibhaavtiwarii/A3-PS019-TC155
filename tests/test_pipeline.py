@@ -63,13 +63,20 @@ def test_pipeline_reads_sqlite(tmp_path):
     assert res.rows[0].cls == "PHONE" and res.rows[0].table == "people"
 
 
-def test_partial_evidence_goes_to_the_review_list(tmp_path):
+def test_a_mixed_column_is_flagged_even_when_most_rows_are_junk(tmp_path):
     p = tmp_path / "t.csv"
-    rows = ["a@x.com"] * 3 + ["call back"] * 7          # 30% emails: below threshold, above floor
+    rows = ["a@x.com"] * 3 + ["call back"] * 7          # 30% emails
     p.write_text("notes\n" + "\n".join(rows) + "\n", encoding="utf-8")
     res = run_pipeline([p], RULES, SCORING, {}, CHECKLIST)
+    assert [f.cls for f in res.rows] == ["EMAIL"]
+
+
+def test_values_alone_for_a_weak_class_go_to_the_review_list(tmp_path):
+    p = tmp_path / "t.csv"
+    p.write_text("misc\n" + "\n".join(["Asha Sharma", "Ravi Kumar", "Neha Gupta", "Imran Khan"]) + "\n", encoding="utf-8")
+    res = run_pipeline([p], RULES, SCORING, {}, CHECKLIST)
     assert res.rows == []
-    assert [f.column for f in res.review] == ["notes"]
+    assert [f.column for f in res.review] == ["misc"]
 
 
 def test_columns_with_no_evidence_are_not_listed_for_review(tmp_path):

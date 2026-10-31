@@ -1,0 +1,70 @@
+source,table,column,purpose,retention,owner
+tune_01.csv,,phone,Payroll processing,24 months,Support team
+tune_01.csv,,full_name,TBD,Until consent withdrawn,Security team
+tune_01.csv,,work_email,Payroll processing,90 days,HR
+tune_01.csv,,birth_date,KYC identity verification,Until consent withdrawn,
+tune_02.csv,,EMAIL_ADDR,,Until consent withdrawn,Security team
+tune_02.csv,,tax_id,,24 months,Compliance
+tune_02.csv,,birth_dt,Support ticketing,Statutory (7 years),Compliance
+tune_02.csv,,FIRST_NAME,Order fulfilment,90 days,Support team
+tune_03.csv,,*,KYC identity verification,90 days,Support team
+tune_04.csv,,date_of_birth,KYC identity verification,,HR
+tune_04.csv,,phone,Customer communication,90 days,Support team
+tune_04.csv,,aadhaar_no,Support ticketing,24 months,Support team
+tune_05.sqlite,records,usr_contact,Payroll processing,Closure + 180 days,Security team
+tune_05.sqlite,records,BIRTH_DATE,,Closure + 180 days,Security team
+tune_05.sqlite,records,tmp_id,Payroll processing,Closure + 180 days,
+tune_06.csv,,applicant_name,Payroll processing,90 days,Security team
+tune_06.csv,,mobile,KYC identity verification,Statutory (7 years),Compliance
+tune_06.csv,,email,TBD,Statutory (7 years),Compliance
+tune_06.csv,,tmp_id,Two-factor authentication,90 days,Support team
+tune_06.csv,,born_on,Payroll processing,90 days,Security team
+tune_07.csv,,tax_id,KYC identity verification,24 months,Support team
+tune_07.csv,,mail_id,TBD,24 months,HR
+tune_07.csv,,phone,Order fulfilment,24 months,Platform team
+tune_07.csv,,dob,KYC identity verification,24 months,Security team
+tune_07.csv,,FIRST_NAME,Order fulfilment,24 months,Compliance
+tune_08.csv,,contact_no,TBD,24 months,Support team
+tune_08.csv,,holder,Two-factor authentication,Until consent withdrawn,Security team
+tune_08.csv,,birth_date,Payroll processing,Closure + 180 days,Security team
+tune_08.csv,,tmp_mail,TBD,Until consent withdrawn,Platform team
+tune_08.csv,,aadhaar_no,Customer communication,24 months,Support team
+tune_09.csv,,dob,Fraud monitoring,24 months,Support team
+tune_09.csv,,email,Order fulfilment,Until consent withdrawn,Security team
+tune_09.csv,,national_id,,,HR
+tune_09.csv,,last_name,Customer communication,Statutory (7 years),Support team
+tune_09.csv,,alt_phone,Fraud monitoring,Until consent withdrawn,
+tune_10.sqlite,records,contact_email,Support ticketing,Until consent withdrawn,Support team
+tune_10.sqlite,records,full_name,Order fulfilment,Closure + 180 days,Support team
+tune_10.sqlite,records,birth_date,Two-factor authentication,Closure + 180 days,Security team
+tune_10.sqlite,records,cell_no,KYC identity verification,Until consent withdrawn,Support team
+tune_11.csv,,cell_no,Customer communication,Until consent withdrawn,Platform team
+tune_11.csv,,customer_name,Customer communication,Statutory (7 years),Compliance
+tune_11.csv,,tmp_mail,Support ticketing,Statutory (7 years),Platform team
+tune_11.csv,,birth_dt,TBD,,Platform team
+tune_11.csv,,aadhaar_no,Order fulfilment,90 days,
+tune_12.csv,,birth_dt,Order fulfilment,Closure + 180 days,Security team
+tune_12.csv,,usr_contact,Payroll processing,TBD,Compliance
+tune_12.csv,,national_id,Order fulfilment,Statutory (7 years),Support team
+tune_12.csv,,recipient_name,Customer communication,Statutory (7 years),Platform team
+tune_12.csv,,email,KYC identity verification,Statutory (7 years),Compliance
+tune_13.csv,,applicant_name,Support ticketing,,HR
+tune_13.csv,,uid,Payroll processing,Until consent withdrawn,Security team
+tune_13.csv,,birth_dt,Customer communication,Closure + 180 days,
+tune_14.csv,,email,Fraud monitoring,Closure + 180 days,
+tune_14.csv,,tax_id,Order fulfilment,90 days,Security team
+tune_14.csv,,birth_date,Customer communication,Statutory (7 years),HR
+tune_14.csv,,contact_no,,TBD,Security team
+tune_14.csv,,CUSTOMER_NAME,,,Platform team
+tune_text.csv,,feedback,Order fulfilment,Closure + 180 days,Security team
+tune_text.csv,,call_log,Customer communication,Closure + 180 days,Compliance
+tune_mixed.csv,,contact,TBD,Closure + 180 days,Security team
+tune_sparse.csv,,alt_email,Fraud monitoring,Until consent withdrawn,Security team
+tune_sparse.csv,,fax_no,,Until consent withdrawn,Compliance
+tune_sparse.csv,,old_mobile,KYC identity verification,TBD,Compliance
+tune_unnamed.csv,,col_1,Two-factor authentication,24 months,Support team
+tune_unnamed.csv,,col_2,Fraud monitoring,90 days,Compliance
+tune_unnamed.csv,,col_3,Fraud monitoring,90 days,Security team
+tune_unnamed.csv,,col_4,Order fulfilment,Closure + 180 days,Platform team
+tune_01.csv,,legacy_field_1,Historic campaign,12 months,Marketing
+tune_01.csv,,legacy_field_2,Historic campaign,12 months,Marketing

@@ -1,51 +1,106 @@
-# Detection rules. Edit this file to change what the scanner looks for.
-# confidence = name_weight * (name hint matched?) + value_weight * (fraction of sampled values that pass)
+# Detection rules. Edit this file to change what the scanner looks for. No code change needed.
 #
-#   name_hints      column-name words that point to the class (whole words only)
-#   negative_hints  column-name words that rule the class OUT (for example 'created' is not a birth date)
-#   value_patterns  cheap regex shape check on sampled values
-#   validator       strict check, by name (see VALIDATORS in src/privexis/engine.py)
-#   check           plain-English name of the checks, shown in the evidence text
+#   confidence = name_weight * (name hint matched?) + value_weight * (share of sampled values that pass)
+#
+# Per class:
+#   name_hints         column-name words that point to the class (whole words; 5+ letter hints also
+#                      match inside a joined word, so 'email' finds 'emailaddr')
+#   strong_hints       hints so specific that one capitalised word is enough (first_name, surname)
+#   negative_hints     column-name words that rule the class OUT ('created' is not a birth date)
+#   value_patterns     cheap regex shape check on sampled values
+#   context_patterns   shapes accepted as evidence ONLY when a name hint also matched
+#   embedded_patterns  look for the value inside longer free text (comments, notes)
+#   validator          strict check, by name: email | phone | govt_id | date_plausible | person_name
+#   value_only         what the values alone may do when NO name hint matched:
+#                        flag    -> flag as a candidate (use for checksum-strong classes)
+#                        review  -> at most "needs review", never flagged on its own
+#                        ignore  -> values alone are no evidence at all
+#                        distribution -> dates only: values alone count when they span decades at
+#                                        adult ages, like birth dates (not like created/joined dates)
+#   mixed_min          flag a column when at least this share of values pass (mixed columns)
+#   embedded_min       flag a free-text column when at least this share of cells CONTAIN a valid item
+#   check              plain-English name of the checks, shown in the evidence text
 scoring:
   name_weight: 0.4
   value_weight: 0.6
   threshold: 0.5        # confidence needed to be flagged as a candidate
   review_floor: 0.1     # not flagged, but at least this much evidence -> listed under "needs review"
+  strict_pan: false     # true = the PAN's 4th letter must be a real holder type (P, C, H, F, A, T, B, L, J, G)
+  embed_min_len: 30     # columns whose values average this many characters are also searched for embedded items
 
 classes:
   NAME:
-    name_hints: [name, surname, fname, lname]
-    check: alphabetic pattern of two or more words
+    name_hints: [name, fullname, full_name, first_name, last_name, middle_name, surname, fname, lname,
+                 forename, given_name, family_name, holder, recipient, person, contact_person,
+                 applicant, nominee, customer, employee, staff, owner, lead, cust_nm]
+    strong_hints: [first_name, last_name, middle_name, surname, fname, lname, forename, given_name,
+                   family_name, full_name, fullname]
+    negative_hints: [file, product, company, brand, org, organization, organisation, city, state, country,
+                     street, school, college, university, team, project, device, model, vendor, supplier,
+                     item, category, region, server, host, domain, bank, branch, dept, department, role,
+                     title, tag, plan, campaign, event, store, shop, hotel, restaurant, app, service,
+                     merchant, business, firm, institution, hospital, clinic, location, place, area, zone,
+                     lab, class, course, subject, pet, table, column, sku, document, report, template,
+                     group, source, type, status, id, code, number]
+    check: capitalised alphabetic words (1 to 4), not an organisation
     value_patterns:
-      - '^[A-Za-z][A-Za-z.-]*(\s+[A-Za-z][A-Za-z.-]*)+$'   # two or more words
+      - '^[^\W\d_][^\d@_]{0,59}$'
+    validator: person_name
+    value_only: review      # two capitalised words appear in many non-person columns
 
   EMAIL:
-    name_hints: [email, e_mail, mail]
+    name_hints: [email, e_mail, mail, email_id, mail_id, eml, email_addr, email_address]
+    negative_hints: [domain, template, subject, server, host, body, queue, count, sent, flag, status, type, opt]
     check: RFC 5322-style email syntax
     value_patterns:
       - '^[^@\s]+@[^@\s]+\.[^@\s]+$'                       # cheap shape check
+    embedded_patterns:
+      - '[A-Za-z0-9._%+''-]+@[A-Za-z0-9-]+(?:\.[A-Za-z0-9-]+)+'
     validator: email                                        # strict check
+    mixed_min: 0.2
+    embedded_min: 0.2
 
   PHONE:
-    name_hints: [phone, mobile, mob, tel, telephone, contact, cell, ph]
-    negative_hints: [emp, employee, code, ref, order, invoice, pin, zip]
-    check: 10-digit mobile pattern (optional +91)
+    name_hints: [phone, mobile, mob, tel, telephone, contact, cell, ph, msisdn, whatsapp, landline,
+                 alt_number, alternate_number, alt_phone, alt_contact, secondary_number, fax]
+    negative_hints: [emp, employee, code, ref, order, invoice, pin, zip, postal, ticket, tracking, awb,
+                     txn, transaction, serial, sku, account, acct, amount, price, qty, quantity, total,
+                     balance, otp, version, batch, lot, barcode, imei]
+    check: 10-digit mobile pattern (optional +91) or international number
     value_patterns:
-      - '^(\+91[\s-]?|0)?[6-9]\d{9}$'
+      - '^(?:\(?\+91\)?[\s-]?|91[\s-]?|0)?[6-9]\d{4}[\s-]?\d{5}$'
+      - '^\+(?!91)[1-9]\d{0,2}[\s().-]*\d(?:[\s().-]*\d){6,12}$'
+    embedded_patterns:
+      - '(?<![\w.])\+?\(?\+?\d[\d\s().-]{8,16}\d(?!\w)'
+    validator: phone
+    embedded_min: 0.3
 
   GOVT_ID:
-    name_hints: [aadhaar, aadhar, uid, pan, national_id, govt_id, gov_id, tax_id]
+    name_hints: [aadhaar, aadhar, adhaar, uid, uidai, pan, national_id, govt_id, gov_id, tax_id,
+                 taxpayer_id, passport, kyc_id, id_proof, nid, ssn]
+    negative_hints: [sku, product, part, model, serial, barcode, imei]   # code-like columns only: a valid
+                                                                          # checksum under 'ref_no' is still an ID
     check: Verhoeff checksum (Aadhaar-style) or PAN format
     value_patterns:
       - '^\d{4}[\s-]?\d{4}[\s-]?\d{4}$'                    # Aadhaar shape
       - '^[A-Za-z]{5}\d{4}[A-Za-z]$'                       # PAN shape
+    context_patterns:
+      - '^[A-PR-WY][1-9]\d{6}$'                            # passport shape: only with a 'passport' style name
+    embedded_patterns:
+      - '(?<!\w)(?:\d{4}[ -]?\d{4}[ -]?\d{4}|[A-Z]{5}\d{4}[A-Z])(?!\w)'
     validator: govt_id                                      # Verhoeff / PAN check
+    mixed_min: 0.3          # a random 12-digit number passes Verhoeff ~9% of the time, so be strict
+    embedded_min: 0.3
 
   DOB:
-    name_hints: [dob, birth, birthdate, birth_date, date_of_birth, born]
-    negative_hints: [created, updated, modified, expiry, expires, issued, timestamp, joined]
-    check: ISO or DD/MM/YYYY date between 1900 and today
+    name_hints: [dob, d_o_b, birth, birthdate, birth_date, date_of_birth, dateofbirth, born, birthday, bday]
+    negative_hints: [created, updated, modified, expiry, expires, expire, issued, timestamp, joined, joining,
+                     hire, hired, due, valid, start, end, delivery, shipped, payment, invoice, login, last,
+                     registered, signup, closed, release, publish, place, city, state, country]
+    check: date (ISO, DD/MM/YYYY, 12 Mar 1990 ...) between 1900 and today
     value_patterns:
-      - '^\d{4}-\d{2}-\d{2}$'
-      - '^\d{2}/\d{2}/\d{4}$'
+      - '^\d{1,4}[-/. ]\d{1,2}[-/. ]\d{1,4}$'
+      - '^\d{1,2}[ -][A-Za-z]{3,9}[ -]\d{4}$'
+      - '^[A-Za-z]{3,9} \d{1,2}, \d{4}$'
     validator: date_plausible
+    value_only: distribution   # without a birth-style name, dates must LOOK like birth dates
