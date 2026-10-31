@@ -1,5 +1,4 @@
 import React from 'react'
-import { SVG } from 'react-native-svg'
 
 // Simplified SVG for Privexis logo (blue cybersecurity shield)
 export default function PrivexisLogo() {
