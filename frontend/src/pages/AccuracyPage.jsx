@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import {
   BarChart3, CheckCircle2, AlertCircle, Loader2,
   TrendingUp, Award, Layers, Sparkles
@@ -18,10 +17,13 @@ export default function AccuracyPage() {
   const fetchAccuracy = async () => {
     setLoading(true);
     try {
-      const res = await axios.get('/api/accuracy');
-      setMetrics(res.data);
+      const apiBase = import.meta.env.VITE_API_BASE_URL || '';
+      const res = await fetch(`${apiBase}/api/accuracy`);
+      if (!res.ok) throw new Error(await res.text());
+      const data = await res.json();
+      setMetrics(data);
     } catch (err) {
-      setError(err.response?.data?.detail || err.message || 'Failed to fetch evaluation metrics');
+      setError(err.message || 'Failed to fetch evaluation metrics');
     } finally {
       setLoading(false);
     }

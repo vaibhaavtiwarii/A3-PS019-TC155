@@ -34,7 +34,7 @@ app = FastAPI(title="Privexis API", version="2.0.0")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],
+    allow_origins=["http://localhost:5173", "http://localhost:5174", "http://localhost:5175"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -97,8 +97,8 @@ def _build_response(
             "owner": meta.get("owner"),
             "sample_values": [_mask(v) for v in raw[:5]],
             "suggested_next_step": (
-                f"Record declared purpose and retention for {f.source}:{f.column} in policy registry, or mark as verified non-PII."
-                if f.gaps else "Checklist verified. Continuous compliance monitoring active."
+                f"No evidence gaps found for {f.source}:{f.column} in the supplied metadata."
+                if not f.gaps else f"Evidence gaps detected for {f.source}:{f.column}: {', '.join(f.gaps)}. Review metadata for purpose, retention, and owner."
             ),
         })
 
@@ -127,12 +127,6 @@ def _build_response(
     high_gaps = sum(1 for f in result.findings if any("PURPOSE" in g or "RETENTION" in g for g in f.gaps) and f.cls != "GOVT_ID")
     medium_gaps = sum(1 for f in result.findings if any("OWNER" in g or "VALUE" in g for g in f.gaps) and not any("PURPOSE" in g or "RETENTION" in g for g in f.gaps))
 
-    trend_history = [
-        {"scan": "Baseline", "candidates": max(total_pii - 4, 3), "gaps": max(len(findings_out) - metadata_linked + 2, 2)},
-        {"scan": "Scan 2", "candidates": max(total_pii - 2, 5), "gaps": max(len(findings_out) - metadata_linked + 1, 1)},
-        {"scan": "Current", "candidates": total_pii, "gaps": sum(1 for f in result.findings if f.gaps)},
-    ]
-
     return {
         "summary": {
             "total_columns": len(result.samples),
@@ -148,7 +142,6 @@ def _build_response(
                 "high": high_gaps,
                 "medium": medium_gaps,
             },
-            "trend_history": trend_history,
         },
         "findings": findings_out,
         "review": review_out,
@@ -177,15 +170,36 @@ async def scan_files(
     metadata_file: Optional[UploadFile] = File(default=None),
 ):
     """Scan uploaded CSV / SQLite files for PII."""
-    tmp = Path(tempfile.mkdtemp(prefix="privexis_"))
+    # Secure upload directory - isolated per request
+    upload_dir = Path(tempfile.mkdtemp(prefix="privexis_upload_"))
     try:
         paths: list[Path] = []
+        MAX_FILE_SIZE = 10 * 1024 * 1024  # 10MB limit
+
         for f in files:
-            ext = Path(f.filename).suffix.lower()
+            # Validate file size
+            if f.size and f.size > MAX_FILE_SIZE:
+                raise HTTPException(413, f"File size exceeds limit of 10MB: {f.filename}")
+
+            # Sanitize filename to prevent path traversal
+            # Use only the basename, no directory components
+            original_name = Path(f.filename).name
+            safe_name = Path(original_name).name  # strips any path components
+            if not safe_name or safe_name.startswith('.') or '..' in safe_name or Path(f.filename).is_absolute():
+                raise HTTPException(400, f"Invalid filename: {f.filename}")
+
+            ext = Path(safe_name).suffix.lower()
             if ext not in (".csv", ".sqlite", ".db", ".sqlite3"):
                 raise HTTPException(400, f"Unsupported file type: {ext}")
-            dest = tmp / f.filename
-            dest.write_bytes(await f.read())
+
+            dest = upload_dir / safe_name
+            content = await f.read()
+
+            # Double-check actual size
+            if len(content) > MAX_FILE_SIZE:
+                raise HTTPException(413, f"File size exceeds limit of 10MB: {safe_name}")
+
+            dest.write_bytes(content)
             paths.append(dest)
 
         extra: dict = {}
@@ -203,7 +217,7 @@ async def scan_files(
 
         return _build_response(result, metadata, paths, elapsed)
     finally:
-        shutil.rmtree(tmp, ignore_errors=True)
+        shutil.rmtree(upload_dir, ignore_errors=True)
 
 
 @app.post("/api/scan-demo")
@@ -320,24 +334,4 @@ def update_metadata(req: MetadataUpdateRequest):
     return scan_demo()
 
 
-class DBConnectionTestRequest(BaseModel):
-    db_type: str = "postgresql"
-    host: str = "localhost"
-    port: int = 5432
-    database_name: str = "kyc_prod"
-    schema_name: Optional[str] = "public"
-    username: Optional[str] = ""
-    password: Optional[str] = ""
-
-
-@app.post("/api/test-db-connection")
-def test_db_connection(req: DBConnectionTestRequest):
-    """Test SQL Database Connection handshake."""
-    time.sleep(0.2)
-    return {
-        "success": True,
-        "message": f"Successfully validated read-only handshake with {req.db_type} at {req.host}:{req.port}/{req.database_name}",
-        "latency_ms": 24,
-        "tables_detected": ["accounts", "customers_kyc", "audit_log"]
-    }
 

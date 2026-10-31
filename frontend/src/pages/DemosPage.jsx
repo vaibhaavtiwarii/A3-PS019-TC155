@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import {
   Beaker, CheckCircle2, XCircle, AlertCircle,
   Loader2, ArrowRight, ShieldCheck, Zap, Sparkles
@@ -16,10 +15,13 @@ export default function DemosPage() {
 
   const fetchDemos = async () => {
     try {
-      const res = await axios.get('/api/demos');
-      setCases(res.data.cases || []);
+      const apiBase = import.meta.env.VITE_API_BASE_URL || '';
+      const res = await fetch(`${apiBase}/api/demos`);
+      if (!res.ok) throw new Error(await res.text());
+      const data = await res.json();
+      setCases(data.cases || []);
     } catch (err) {
-      setError(err.response?.data?.detail || err.message || 'Failed to fetch demo cases');
+      setError(err.message || 'Failed to fetch demo cases');
     } finally {
       setLoading(false);
     }

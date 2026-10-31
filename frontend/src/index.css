@@ -1,36 +1,45 @@
+@import "tailwindcss";
+
 @layer base {
   body {
-    background-color: #07080a;
-    color: #f1f5f9;
-    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+    background-color: #0b0d12;
+    color: #e2e8f0;
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
     margin: 0;
     padding: 0;
     -webkit-font-smoothing: antialiased;
   }
 
   h1, h2, h3, h4, .font-display {
-    font-family: 'Space Grotesk', sans-serif;
-    letter-spacing: -0.02em;
+    font-family: 'Outfit', 'Space Grotesk', sans-serif;
+    letter-spacing: -0.03em;
   }
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
-  height: 5px;
+  width: 6px;
+  height: 6px;
 }
 ::-webkit-scrollbar-track {
-  background: #07080a;
+  background: #0b0d12;
 }
 ::-webkit-scrollbar-thumb {
-  background: #171b23;
-  border-radius: 4px;
+  background: #1e2433;
+  border-radius: 3px;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #272d3b;
+  background: #2a3348;
 }
 
-/* Subtle carbon card border */
+/* Carbon & Glass Card Panels */
 .carbon-panel {
-  background: #0c0e12;
-  border: 1px solid #1a1f29;
+  background: #11141d;
+  border: 1px solid #1e2433;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.3), 0 8px 10px -6px rgba(0, 0, 0, 0.3);
+}
+
+.carbon-panel-glow {
+  background: #11141d;
+  border: 1px solid rgba(245, 158, 11, 0.2);
+  box-shadow: 0 10px 30px -10px rgba(245, 158, 11, 0.15);
 }

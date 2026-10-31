@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import { X, ShieldAlert, Check, Loader2, Sparkles } from 'lucide-react';
 
 const PURPOSE_PRESETS = [
@@ -30,18 +29,25 @@ export default function MetadataModal({ item, onClose, onUpdated }) {
     setSaving(true);
     setError(null);
     try {
-      const res = await axios.post('/api/metadata/update', {
-        source: item.source,
-        table: item.table || '-',
-        column: item.column,
-        purpose,
-        retention,
-        owner,
+      const apiBase = import.meta.env.VITE_API_BASE_URL || '';
+      const res = await fetch(`${apiBase}/api/metadata/update`, {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          source: item.source,
+          table: item.table || '-',
+          column: item.column,
+          purpose,
+          retention,
+          owner,
+        }),
       });
-      onUpdated(res.data);
+      if (!res.ok) throw new Error(await res.text());
+      const data = await res.json();
+      onUpdated(data);
       onClose();
     } catch (err) {
-      setError(err.response?.data?.detail || err.message || 'Failed to update metadata');
+      setError(err.message || 'Failed to update metadata');
     } finally {
       setSaving(false);
     }

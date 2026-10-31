@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import {
   Sliders, CheckCircle2, Shield,
   FileCode, Loader2, AlertCircle, Sparkles
@@ -16,10 +15,13 @@ export default function RulesPage() {
 
   const fetchRules = async () => {
     try {
-      const res = await axios.get('/api/rules');
-      setConfig(res.data);
+      const apiBase = import.meta.env.VITE_API_BASE_URL || '';
+      const res = await fetch(`${apiBase}/api/rules`);
+      if (!res.ok) throw new Error(await res.text());
+      const data = await res.json();
+      setConfig(data);
     } catch (err) {
-      setError(err.response?.data?.detail || err.message || 'Failed to fetch rules config');
+      setError(err.message || 'Failed to fetch rules config');
     } finally {
       setLoading(false);
     }
