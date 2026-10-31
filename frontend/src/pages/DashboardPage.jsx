@@ -13,12 +13,23 @@ const CLASS_COLORS = {
   DOB: '#10b981',     // Emerald
 };
 
-export default function DashboardPage({ data, onNavigate, onOpenMetadataModal }) {
+export default function DashboardPage({ data, searchQuery = '', onNavigate, onOpenMetadataModal }) {
   if (!data) return null;
 
   const { summary, findings, review } = data;
   const classBreakdown = summary.class_breakdown || {};
   const totalFindings = summary.pii_detected || findings.length || 1;
+
+  const filteredFindings = findings.filter(f => {
+    if (!searchQuery) return true;
+    const q = searchQuery.toLowerCase();
+    return (
+      f.column.toLowerCase().includes(q) ||
+      f.cls.toLowerCase().includes(q) ||
+      f.source.toLowerCase().includes(q) ||
+      (f.purpose && f.purpose.toLowerCase().includes(q))
+    );
+  });
 
   // Donut chart computations
   const donutSegments = [];
@@ -278,7 +289,7 @@ export default function DashboardPage({ data, onNavigate, onOpenMetadataModal })
               </tr>
             </thead>
             <tbody className="divide-y divide-[#171b23]">
-              {findings.slice(0, 6).map((f, i) => (
+              {filteredFindings.slice(0, 6).map((f, i) => (
                 <tr key={i} className="hover:bg-[#11141a] transition-colors">
                   <td className="px-4 py-2.5 font-mono font-bold text-white text-[11px]">
                     {f.column}

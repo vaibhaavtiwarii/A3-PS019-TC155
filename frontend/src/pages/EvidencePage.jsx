@@ -5,9 +5,8 @@ import {
   Sparkles, RefreshCw
 } from 'lucide-react';
 
-export default function EvidencePage({ data, onNavigateToScan, onLoadDemo, onOpenMetadataModal }) {
+export default function EvidencePage({ data, searchQuery = '', onSearchChange, onNavigateToScan, onLoadDemo, onOpenMetadataModal }) {
   const [filterClass, setFilterClass] = useState('ALL');
-  const [searchQuery, setSearchQuery] = useState('');
   const [expandedRow, setExpandedRow] = useState(null);
 
   if (!data) {
@@ -169,7 +168,7 @@ export default function EvidencePage({ data, onNavigateToScan, onLoadDemo, onOpe
             type="text"
             placeholder="Search column or source..."
             value={searchQuery}
-            onChange={(e) => setSearchQuery(e.target.value)}
+            onChange={(e) => onSearchChange && onSearchChange(e.target.value)}
             className="w-full bg-[#070a12] border border-[#182035] rounded-lg pl-9 pr-3 py-1.5 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-emerald-500/60"
           />
         </div>

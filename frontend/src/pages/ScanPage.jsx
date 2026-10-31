@@ -73,15 +73,15 @@ export default function ScanPage({ onScanComplete }) {
       }
 
       setScanProgress(100);
-      addLog(`[COMPLETE] Discovered ${res.data.findings.length} PII candidate fields in ${res.data.summary.execution_time}s`);
-      addLog(`[LINKER] Joined findings with policy metadata. ${res.data.summary.gap_count} evidence gaps flagged.`);
+      addLog(`[COMPLETE] Discovered ${res.findings.length} PII candidate fields in ${res.summary.execution_time}s`);
+      addLog(`[LINKER] Joined findings with policy metadata. ${res.summary.gap_count} evidence gaps flagged.`);
 
       setTimeout(() => {
-        onScanComplete(res.data, sourceType !== 'demo');
+        onScanComplete(res, sourceType !== 'demo');
       }, 500);
     } catch (err) {
       setError(err.message || 'Scan execution failed');
-      addLog(`[FATAL] Scan halted: ${err.message}`);
+      addLog(`[FATAL] Scan halted: ${err.message || 'Unknown error'}`);
     } finally {
       setLoading(false);
     }

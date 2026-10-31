@@ -72,11 +72,19 @@ def _build_response(
     metadata: dict,
     paths: list,
     elapsed: float,
+    findings: list = None,
 ) -> dict:
     """Convert a PipelineResult to the JSON response format."""
     # Gap tally
     gap_tally: dict[str, int] = {}
-    for f in result.findings:
+    if findings:
+        for f in findings:
+            for g in f.gaps:
+                gap_tally[g] = gap_tally.get(g, 0) + 1
+    else:
+        for f in result.findings:
+            for g in f.gaps:
+                gap_tally[g] = gap_tally.get(g, 0) + 1
         for g in f.gaps:
             gap_tally[g] = gap_tally.get(g, 0) + 1
 
@@ -144,8 +152,8 @@ def _build_response(
 
     return {
         "summary": {
-            "total_columns": len(result.samples),
-            "pii_detected": total_pii,
+            "total_columns": len(result.all_columns),
+            "pii_detected": len(result.findings),
             "gap_count": sum(1 for f in result.findings if f.gaps),
             "metadata_linked": metadata_linked,
             "evidence_coverage": coverage_pct,

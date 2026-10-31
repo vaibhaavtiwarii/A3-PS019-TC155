@@ -5,13 +5,19 @@ import {
   ArrowRight, Shield, AlertOctagon, HelpCircle
 } from 'lucide-react';
 
-export default function GapsPage({ data, onNavigateToScan, onLoadDemo, onOpenMetadataModal }) {
+export default function GapsPage({ data, searchQuery = '', onSearchChange, onNavigateToScan, onLoadDemo, onOpenMetadataModal }) {
   const [activeTab, setActiveTab] = useState('cards'); // 'cards' or 'matrix'
 
   if (!data) return null;
 
   const { findings, gap_tally, orphaned_metadata, summary } = data;
-  const gapFindings = findings.filter((f) => f.gaps && f.gaps.length > 0);
+  const gapFindings = findings.filter((f) => {
+    const matchesSearch =
+      f.column.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      f.source.toLowerCase().includes(searchQuery.toLowerCase()) ||
+      f.table.toLowerCase().includes(searchQuery.toLowerCase());
+    return f.gaps && f.gaps.length > 0 && matchesSearch;
+  });
   const severity = summary.severity || { critical: 0, high: gapFindings.length, medium: 0 };
 
   const downloadMarkdownReport = () => {

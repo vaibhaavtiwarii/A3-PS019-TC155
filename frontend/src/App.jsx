@@ -73,6 +73,7 @@ export default function App() {
             <Route path="/dashboard" element={
               <DashboardPage
                 data={scanResult}
+                searchQuery={globalSearch}
                 onOpenMetadataModal={(item) => setEditingItem(item)}
               />
             } />
@@ -84,6 +85,8 @@ export default function App() {
             <Route path="/evidence" element={
               <EvidencePage
                 data={scanResult}
+                searchQuery={globalSearch}
+                onSearchChange={setGlobalSearch}
                 onLoadDemo={loadDemoScan}
                 onOpenMetadataModal={(item) => setEditingItem(item)}
               />
@@ -91,6 +94,8 @@ export default function App() {
             <Route path="/gaps" element={
               <GapsPage
                 data={scanResult}
+                searchQuery={globalSearch}
+                onSearchChange={setGlobalSearch}
                 onLoadDemo={loadDemoScan}
                 onOpenMetadataModal={(item) => setEditingItem(item)}
               />
