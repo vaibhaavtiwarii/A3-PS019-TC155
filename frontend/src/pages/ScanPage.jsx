@@ -6,7 +6,7 @@ import {
   Check, RefreshCw
 } from 'lucide-react';
 
-export default function ScanPage({ onScanComplete }) {
+export default function ScanPage({ onScanComplete, onNavigate }) {
   const navigate = useNavigate();
   const [sourceType, setSourceType] = useState('demo'); // 'demo', 'files'
   const [files, setFiles] = useState([]);

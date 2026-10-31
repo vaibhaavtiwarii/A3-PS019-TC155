@@ -1,7 +1,7 @@
 import React from 'react';
 import { Search, Plus, Shield, Terminal, Zap } from 'lucide-react';
 
-export default function Header({ onStartScan, searchQuery, onSearchChange, gapCount }) {
+export default function Header({ searchQuery, onSearchChange, onStartScan, gapCount }) {
   return (
     <header className="h-14 border-b border-[#171b23] bg-[#090b0e]/90 backdrop-blur-md sticky top-0 z-40 px-6 flex items-center justify-between">
       {/* Workspace Breadcrumbs & Scope Tag */}

@@ -63,6 +63,7 @@ export default function App() {
         <Header
           searchQuery={globalSearch}
           onSearchChange={setGlobalSearch}
+          onStartScan={() => navigate('/scan')}
           gapCount={gapCount}
         />
 
