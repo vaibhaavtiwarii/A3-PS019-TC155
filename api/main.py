@@ -2,6 +2,7 @@
 Privexis API — FastAPI backend wrapping the core privexis library.
 Provides endpoints for scanning, evidence, gaps, accuracy, rules, and demos.
 """
+import os
 
 import sys
 import time
@@ -32,10 +33,17 @@ DATA_DIR = ROOT / "data"
 
 app = FastAPI(title="Privexis API", version="2.0.0")
 
+# Browser origins allowed to call this API. The deployed frontend must be listed, or the
+# browser blocks every request. Extra origins: set CORS_ORIGINS="https://a.com,https://b.com".
+_ALLOWED_ORIGINS = [
+    "http://localhost:5173", "http://localhost:5174", "http://localhost:5175",
+    "https://a3-ps-019-tc-155.vercel.app",
+] + [o.strip() for o in os.environ.get("CORS_ORIGINS", "").split(",") if o.strip()]
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://localhost:5174", "http://localhost:5175"],
-    allow_credentials=True,
+    allow_origins=_ALLOWED_ORIGINS,
+    allow_credentials=False,
     allow_methods=["*"],
     allow_headers=["*"],
 )
